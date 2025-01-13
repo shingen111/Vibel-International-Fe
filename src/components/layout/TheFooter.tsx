@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import Visibility from "../base/Visibility";
 import { Link } from "@/i18n/routing";
+import { DEFINE_ROUTERS } from "@/constants/routers";
 
 function TextFormat({ text }: { text: string }) {
   return (
@@ -18,20 +19,34 @@ export default function TheFooter() {
     {
       title: "Vibel International",
       items: [
-        <TextFormat key={1} text={t("About Us")} />,
+        <Link key={1} href={DEFINE_ROUTERS.aboutUs}>
+          <TextFormat text={t("About Us")} />
+        </Link>,
         <TextFormat key={2} text={t("Our Expert Team")} />,
       ],
     },
     {
       title: t("Our Services"),
       items: [
-        <Link href={""} key={1} className="text-[#8E8E8E] text-sm font-normal">
+        <Link
+          href={DEFINE_ROUTERS.hotelManager}
+          key={1}
+          className="text-[#8E8E8E] text-sm font-normal"
+        >
           {t("Franchise Consulting Services")}
         </Link>,
-        <Link href={""} key={2} className="text-[#8E8E8E] text-sm font-normal">
+        <Link
+          href={DEFINE_ROUTERS.hotelFranchiseConsulting}
+          key={2}
+          className="text-[#8E8E8E] text-sm font-normal"
+        >
           {t("Management and Operation Consulting Sevice")}
         </Link>,
-        <Link href={""} key={3} className="text-[#8E8E8E] text-sm font-normal">
+        <Link
+          href={DEFINE_ROUTERS.developConsulting}
+          key={3}
+          className="text-[#8E8E8E] text-sm font-normal"
+        >
           {t("Development Consulting and Project Supervision")}
         </Link>,
       ],

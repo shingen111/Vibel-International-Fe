@@ -19,15 +19,15 @@ export default function TheHeader() {
     },
     {
       label: t("menu-3"),
-      href: "/explore-brand",
+      href: DEFINE_ROUTERS.exploreHotelBrands,
     },
     {
       label: t("menu-4"),
-      href: "/contact",
+      href: DEFINE_ROUTERS.insights,
     },
     {
       label: t("menu-5"),
-      href: "/about-us",
+      href: DEFINE_ROUTERS.aboutUs,
     },
   ];
 

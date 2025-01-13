@@ -104,5 +104,58 @@
     "text_31": "High communication and professional marketing support will easily access the customer system as well as the group's communication system to save marketing costs for the project.",
     "text_32": "The investor is provided with the entire process, management standards, procedures, finance, training, and staff management.",
     "text_33": "There is no potential risk when VIBEL INT commits to the investor to only pay the fee after using the service."
+  },
+  "explore_hotel_brands": {
+    "title": "EXPLORE HOTEL BRANDS",
+    "description": "At Vibel International, we have established strong partnerships with the world's leading hotel groups, including Wyndham, Accor, Marriott, IHG, and many others. This extensive network allows us to offer a wide range of premium hotel brands, giving investors access to top-tier options tailored to their unique project needs. With our deep industry connections and expertise, we guide you in selecting the most suitable brand to elevate your project, ensuring long-term success and growth. Explore the diverse portfolio of hotel brands we represent and find the perfect match for your investment."
+  },
+  "develop_consulting_and_project_supervision": {
+    "title": "Development Consulting and Project Supervision",
+    "description": "Vibel International's Hotel Project Development and Supervision Consulting service helps investors optimize costs, ensure project timelines and quality, while achieving high return on investment (ROI). We provide comprehensive solutions, from selecting the right brand and overseeing construction to managing safety factors and addressing any issues that arise during implementation. With a team of experienced experts, Vibel International is committed to providing long-term strategies, ensuring sustainable project growth, and enhancing the value and profitability of your investment.",
+    "text_1": "Vibel International provides comprehensive consulting services for investors in the development and construction phases of hotel projects, covering investment strategy, funding, construction timelines, and quality control. We support investors through the following specific services:",
+    "text_2": "Brand Selection Consulting: Assisting in the selection of reputable hotel and resort brands that align with the project's vision and development potential.",
+    "text_3": "Architectural and Design Firm Selection: Helping choose professional firms for architectural and interior design to ensure aesthetic value and functionality.",
+    "text_4": "Construction Supervision: Monitoring the construction progress to ensure the project is completed on time and meets quality requirements.",
+    "text_5": "Investment Cost Management: Controlling the budget, optimizing costs, and helping investors achieve the highest return on investment (ROI).",
+    "text_6": "Mechanical, Electrical, and Plumbing System Design Consulting: Ensuring that mechanical, electrical, and plumbing systems comply with international standards and operational requirements.",
+    "text_7": "Partnership Connection and Collaboration: Assisting investors in connecting and collaborating with contractors, brand franchisors, and hotel management companies for efficient project implementation.",
+    "text_8": "Design and Construction Change Evaluation: Ensuring that any changes to the design and construction do not affect the timeline, quality, safety, or environmental standards.",
+    "text_9": "Workplace Safety and Environmental Supervision: Ensuring compliance with safety, environmental, and fire prevention regulations during construction.",
+    "text_10": "Project Risk Management: Managing risks associated with the project, ensuring potential issues are forecasted and addressed promptly.",
+    "text_11": "Service Goals:",
+    "text_12": "Strategic and Project Goal Consulting: We listen carefully to understand the project’s goals and business needs, aiming to maximize business efficiency and ensure sustainable success.",
+    "text_13": "Capital Cost Optimization: We work closely with investors to optimize the investment budget, ensuring the highest ROI and effective capital utilization.",
+    "text_14": "Multidisciplinary Approach: Our teams use data-driven analysis to provide future strategies, guiding investors in hotel management and operations decisions, while optimizing investment profits.",
+    "text_15": "With a team of experienced experts and scientific management methods, Vibel International is committed to partnering with investors to implement internationally standardized, efficient, and sustainable hotel projects."
+  },
+  "insights": {
+    "title": "INSIGHTS",
+    "description": "Strategic information and the latest trends in the hospitality industry. Here, hotel owners and operations experts can access invaluable knowledge on franchising, management, and sustainable development. From market analysis to groundbreaking solutions, Vibel International empowers you with the foundation to navigate the future and make informed business decisions."
+  },
+  "about_us": {
+    "title": "ABOUT US",
+    "description": "Vibel International - A strategic partner in franchise consulting, design, operation, and management of hotels and resorts in Vietnam, dedicated to elevating property value and maximizing profitability for investors.",
+    "text_1": "Vibel International was founded by experienced professionals in the field of development and operation of hotel and resort systems from various countries. Vibel International provides consultancy services for obtaining \"brand franchising\" (Franchise Service) from international hotel corporations. The company also offers design and operational consultancy services for hotel projects and investors in Vietnam.",
+    "text_2": "These services include project feasibility analysis and assessment, planning and technical services, owner representation to oversee contractor activities, and handling local legal issues. Vibel International further assists investors in recruiting senior personnel, establishing business and marketing systems, communication frameworks, customer care systems, and supplier networks before project inauguration.",
+    "text_3": "Following this, Vibel International takes on the responsibility of managing (Management Service) hotel and resort projects, working closely with the channels and systems of international corporations to optimize operations and business activities. This ensures increased revenue and cost savings while alleviating all concerns for the investors.",
+    "text_4": "PRINCIPLES AND PHILOSOPHY OF VIBEL INTERNATIONAL",
+    "text_5": "Always deliver the best service quality to customers and partners with integrity, a cooperative attitude, and the highest level of efficiency in work.",
+    "text_6": "Commit to complying with laws, policies, and regulations of the State, upholding trustworthiness, and avoiding deceit for profit.",
+    "text_7": "Responsibility: Ensure customer satisfaction and partner success. Provide benefits for employees and contribute to societal development.",
+    "text_8": "Guarantee peace of mind for customers and partners by prioritizing business ethics to ensure absolute safety in sustainable and long-term development.",
+    "text_9": "Commit to safety and environmentally friendly development, promoting a \"green, clean, and beautiful\" environment.",
+    "text_10": "Aim to leverage “smart” technology and Industry 4.0 innovations to minimize operational costs and protect the shared environment.",
+    "text_11": "MEET THE EXPERT TEAM"
+  },
+  "book_a_meeting": {
+    "title": "BOOK A MEETING",
+    "description": "Start your journey of developing and optimizing your hotel project with Vibel International. We will listen, advise, and provide tailored solutions to help you achieve your business goals and maximize investment returns. Schedule a meeting with us today to discuss your project in detail and explore collaboration opportunities.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "select_a_topic": "Select a Topic",
+    "yours_message": "Your Message",
+    "policy": "By providing Vibel International your contact information, you acknowledge and agree to our <code>Privacy Policy</code> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.",
+    "submit": "Submit"
   }
 }

@@ -6,7 +6,11 @@ const DEFINE_ROUTERS_ADMIN = {
 const DEFINE_ROUTERS = {
   home: "/",
   hotelManager: "/hotel-manager",
-  hotelFranchiseConsulting: "/hotel-franchise-consulting"
-}
+  hotelFranchiseConsulting: "/hotel-franchise-consulting",
+  exploreHotelBrands: "/explore-hotel-brands",
+  developConsulting: "/develop-consulting-and-project-supervision",
+  insights: "/insights",
+  aboutUs: "/about-us",
+};
 
 export { DEFINE_ROUTERS_ADMIN, DEFINE_ROUTERS };
