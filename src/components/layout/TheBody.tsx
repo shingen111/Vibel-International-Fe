@@ -1,0 +1,18 @@
+import React from "react";
+import TheHeaderBackground from "../base/TheHeaderBackground";
+
+interface IProps {
+  children: React.ReactNode;
+  url: string;
+  title: string;
+  description?: string;
+}
+
+export default function TheBody({ children, url, title, description }: IProps) {
+  return (
+    <div className="w-full">
+      <TheHeaderBackground url={url} title={title} description={description} />
+      <div className="p-[64px] flex justify-start items-center">{children}</div>
+    </div>
+  );
+}
