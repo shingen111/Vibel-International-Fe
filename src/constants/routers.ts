@@ -3,4 +3,10 @@ const DEFINE_ROUTERS_ADMIN = {
   dashboard: "/dashboard",
 };
 
-export { DEFINE_ROUTERS_ADMIN };
+const DEFINE_ROUTERS = {
+  home: "/",
+  hotelManager: "/hotel-manager",
+  hotelFranchiseConsulting: "/hotel-franchise-consulting"
+}
+
+export { DEFINE_ROUTERS_ADMIN, DEFINE_ROUTERS };

@@ -1,4 +1,5 @@
 {
+  "read_more": "đọc thêm",
   "homePage": {
     "title": "Trang chủ",
     "welcome": "Chào mừng đến với trang web của chúng tôi!"
@@ -14,5 +15,97 @@
   },
   "home": {
     "title": "Hơn 35 Năm Kinh Nghiệm Quản Lý Khách Sạn"
+  },
+  "footer": {
+    "Vibel International": "Vibel International",
+    "About Us": "Về Chúng Tôi",
+    "Our Expert Team": "Đội Ngũ Chuyên Gia",
+    "Our Services": "Dịch Vụ",
+    "Franchise Consulting Services": "Quản Lý và Vận Hành Khách Sạn, Căn Hộ, Resort",
+    "Management and Operation Consulting Sevice": "Nhượng Quyền Thương Hiệu Khách Sạn",
+    "Development Consulting and Project Supervision": "Tư Vấn Phát Triển và Giám Sát Dự Án",
+    "Contact": "Liên Hệ",
+    "contact_address_1": "Văn Phòng Hồ Chí Minh: Tầng 7, Mê Linh Point Office Tower, 2 Đường Ngô Đức Kế, Phường Bến Nghé, Quận 1",
+    "contact_address_2": "Văn Phòng Hải Phòng: Harbour View Office Tower, 12 Đường Trần Phú, Phường Máy Tơ, Quận Ngô Quyền",
+    "See Us On": "Kết Nối Với Chúng Tôi"
+  },
+  "service_landing": {
+    "OUR SERVICES": "DỊCH VỤ CHÚNG TÔI CUNG CẤP",
+    "service_1": "Quản Lý và Vận Hành Khách Sạn, Căn Hộ, Resort",
+    "service_2": "Nhượng Quyền Thương Hiệu Khách Sạn",
+    "service_3": "Tư Vấn Phát Triển và Giám Sát Dự Án"
+  },
+  "choose_us_landing": {
+    "WHY YOU CHOOSE US": "TẠI SAO CHỌN VIBEL INTERNATIONAL",
+    "Extensive Expertise": "Kinh Nghiệm Chuyên Sâu",
+    "Over 10 years of experience in the hospitality industry": "Hơn 35 năm trong lĩnh vực khách sạn",
+    "Global Network": "Mạng Lưới Toàn Cầu",
+    "Strong connections with leading hotel brands worldwide": "Kết nối với các thương hiệu khách sạn lớn",
+    "Flexible Solutions": "Giải Pháp Linh Hoạt",
+    "Tailored to meet the specific needs of each project": "Tùy chỉnh phù hợp với nhu cầu từng dự án",
+    "Commitment to Quality": "Cam Kết Chất Lượng",
+    "Delivering results that exceed expectations": "Đảm bảo kết quả vượt mong đợi"
+  },
+  "contact": {
+    "title": "BIẾN TẦM NHÌN CỦA BẠN THÀNH HIỆN THỰC",
+    "description": "Kết nối với chúng tôi và nhận sự trợ giúp từ đội ngũ chuyên gia đầu ngành",
+    "btn": "ĐẶT LỊCH TƯ VẤN"
+  },
+  "list_hotel": {
+    "HOT PROPERTY": "BẤT ĐỘNG SẢN NÓNG",
+    "View a selection of the finest new developments": "tuyển tập các dự án Tốt nhất",
+    "The finest new hotels & resorts in Asia, from beautiful beaches to the largest mixed-use developments in the city": "Những khách sạn và khu nghỉ dưỡng mới tốt nhất ở châu Á, từ những bãi biển đẹp đến những khu phát triển phức hợp lớn nhất trong thành phố.",
+    "READ MORE": "ĐỌC THÊM",
+    "WYNDHAM HOTELS": "KHÁCH SẠN WYNDHAM",
+    "OUR PICK OF WYNDHAM HOTELS": "CÁC LỰA CHỌN WYNDHAM DO CHÚNG TÔI BIÊN SOẠN",
+    "From a 200 rooms investment opportunity to a new development in Asia, these are the hottest properties you can view right now": "Từ cơ hội đầu tư 200 phòng đến cơ hội phát triển dự án mới ở Châu Á, đây là những bất động sản hấp dẫn nhất mà bạn có thể xem ngay bây giờ."
+  },
+  "hotel_manager": {
+    "title": "QUẢN LÝ VÀ VẬN HÀNH KHÁCH SẠN, CĂN HỘ, RESORT",
+    "description": "Việc vận hành một khách sạn, resort hay căn hộ không chỉ đòi hỏi sự am hiểu sâu sắc về thị trường mà còn cần đội ngũ chuyên gia để tối ưu hóa hoạt động và lợi nhuận. Một công ty quản lý chuyên nghiệp sẽ giúp chủ đầu tư giảm thiểu rủi ro, tiết kiệm thời gian và chi phí thông qua các chiến lược vận hành bài bản, quy trình tiêu chuẩn, và giải pháp sáng tạo. Đồng thời, mang đến sự kết nối với các đối tác lớn, khai thác nguồn khách bền vững, và đảm bảo trải nghiệm đẳng cấp cho khách lưu trú, giúp nâng cao giá trị thương hiệu và tài sản của bạn.",
+    "text_1": "Vibel International evaluates the business performance of hotels, resorts, and apartments in local areas, offering guidance on determining the appropriate hotel scale, providing hotel management consultancy, and developing short-term and long-term growth strategies while addressing competitive factors. The company also advises on the functional design of facilities and projects.",
+    "text_2": "Vibel International engages in consultancy from the initial stages of a project, optimizing operational efficiency, and saving significant time and costs for investors.",
+    "text_3": "Our approach includes",
+    "text_4": "Bringing together leading architects and experts in hotel design to create exceptional properties.",
+    "text_5": "Selecting experienced personnel with a deep understanding of Vietnamese culture and market dynamics to manage hotels.",
+    "text_6": "Delivering impeccable services tailored to meet every guest's need, with guest satisfaction as the cornerstone of our growth.",
+    "text_7": "Collaborating, innovating, and partnering with corporations and agencies to identify and attract target customer segments, maximizing hotel revenue potential."
+  },
+  "hotel_franchise_consulting": {
+    "title": "NHƯỢNG QUYỀN KHÁCH SẠN",
+    "description": "Nhượng quyền thương hiệu - giải pháp tối ưu cho chủ đầu tư. Vibel  International đồng hành cùng các chủ đầu tư trong việc lựa chọn và triển khai nhượng quyền thương hiệu từ các tập đoàn khách sạn hàng đầu thế giới như Wyndham, Accor, Marriott, và IHG... Chúng tôi cung cấp các mô hình nhượng quyền phù hợp, từ quản lý vận hành đến giải pháp kinh doanh toàn diện, giúp tối ưu hóa lợi nhuận, nâng tầm thương hiệu, và đảm bảo sự thành công bền vững cho dự án của bạn.",
+    "text_1": "Vibel International – Đối Tác Chiến Lược Trong Tư Vấn Nhượng Quyền Thương Hiệu Khách Sạn",
+    "text_2": "Vibel International thực hiện nghiên cứu và phân tích chuyên sâu về thị trường kinh doanh khách sạn, resort và căn hộ dịch vụ tại địa phương thông qua các công cụ như “FS,” “SWOT,” “P&L,” “SMART,” và “Projection.” Chúng tôi định hướng quy mô phù hợp, chiến lược quản lý, và lộ trình phát triển ngắn hạn, dài hạn để tăng cường lợi thế cạnh tranh cho từng dự án.  ",
+    "text_3": "Hiện tại, Vibel International là đại diện chính thức của Wyndham Hotel Group (WHG) tại Việt Nam và hợp tác chặt chẽ với các tập đoàn khách sạn hàng đầu như Accor, Marriott, IHG, và các thương hiệu lớn khác để cung cấp dịch vụ nhượng quyền thương hiệu và quản lý khách sạn trên toàn lãnh thổ Việt Nam.",
+    "text_4": "Chúng tôi cung cấp hai mô hình nhượng quyền chính:",
+    "text_5": "Nhượng quyền kết hợp quản lý (Management Franchise): Hỗ trợ từ vận hành đến quản lý toàn diện.",
+    "text_6": "Nhượng quyền mô hình kinh doanh toàn diện (Full Business Format Franchise): Cung cấp giải pháp tổng thể từ chiến lược kinh doanh đến vận hành.",
+    "text_7": "Với đội ngũ chuyên gia giàu kinh nghiệm và mạng lưới đối tác toàn cầu, Vibel International cam kết mang đến giải pháp hiệu quả, nâng cao giá trị thương hiệu và tối ưu hóa lợi nhuận cho các nhà đầu tư.",
+    "text_8": "Lợi ích từ nhượng quyền thương hiệu:",
+    "text_9": "Sử dụng và sở hữu hợp pháp một thương hiệu mạnh, danh tiếng, nằm trong top 5 thương hiệu khách sạn lớn nhất thế giới.",
+    "text_10": "Nhận tư vấn kiến trúc và thiết kế theo tiêu chuẩn của tập đoàn.",
+    "text_11": "Đào tạo và huấn luyện hệ thống nhân sự chuyên nghiệp trước khi khai trương bởi các chuyên gia quốc tế.",
+    "text_12": "Dự án được kích hoạt trong hệ thống bán hàng và mạng lưới marketing toàn cầu (hơn 800 văn phòng tại nhiều quốc gia/vùng lãnh thổ).",
+    "text_13": "Được kiểm tra và đánh giá định kỳ ít nhất 2 lần/năm để duy trì chất lượng dịch vụ khách hàng.",
+    "text_14": "Hình ảnh thương hiệu và dự án được quảng bá thường xuyên bởi hệ thống truyền thông của tập đoàn.",
+    "text_15": "Kết nối với các đối tác toàn cầu như hãng hàng không, tổ chức du lịch, ngân hàng, hệ thống thẻ,... tại hơn 128 quốc gia/vùng lãnh thổ.",
+    "text_16": "Kinh doanh dưới thương hiệu đã được định hình, đảm bảo doanh thu và tuân thủ các tiêu chuẩn, quy trình vận hành.",
+    "text_17": "Được chuyển giao tiêu chuẩn, kế hoạch, mô hình kinh doanh và hỗ trợ quảng bá dự án.",
+    "text_18": "Dịch vụ quản lý sau nhượng quyền (Tuỳ chọn)",
+    "text_19": "Quản lý toàn bộ dự án, giảm thiểu mọi lo lắng của nhà đầu tư, đảm bảo hoạt động theo tiêu chuẩn và quy định quốc tế.",
+    "text_20": "Hệ thống nhân sự được đào tạo và cập nhật chuyên nghiệp liên tục.",
+    "text_21": "Xây dựng kế hoạch kinh doanh, chiến lược và hệ thống tối ưu hóa doanh thu cho nhà đầu tư.",
+    "text_22": "Cam kết của chúng tôi:",
+    "text_23": "Thời hạn hợp đồng ngắn hạn, tối thiểu 10 năm, với tuỳ chọn gia hạn.",
+    "text_24": "Phí thương hiệu chỉ thanh toán một lần, không phát sinh thêm khi gia hạn hợp đồng.",
+    "text_25": "Hợp tác với các thương hiệu lớn, uy tín, thuộc top 5 thương hiệu mạnh nhất thế giới.",
+    "text_26": "Hệ thống bán hàng và marketing rộng lớn với hơn 800 văn phòng, mạng lưới tại 128 quốc gia/vùng lãnh thổ.",
+    "text_27": "Tận dụng lượng khách hàng doanh nghiệp và thành viên lớn (hơn 80 triệu khách hàng doanh nghiệp).",
+    "text_28": "Chi phí chuyển giao phù hợp với yêu cầu và khả năng của nhà đầu tư.",
+    "text_29": "Các sản phẩm và dự án của nhà đầu tư xuất hiện trong các chương trình Du lịch Thế giới nhờ liên kết với các hiệp hội và tổ chức triển lãm du lịch toàn cầu.",
+    "text_30": "Hưởng lợi từ hệ thống bán hàng nội bộ và các chương trình bán chéo (cross-selling) trong cùng hệ thống.",
+    "text_31": "Hỗ trợ truyền thông và marketing chuyên nghiệp, tiết kiệm chi phí.",
+    "text_32": "Nhà đầu tư được cung cấp đầy đủ quy trình, tiêu chuẩn quản lý, quy trình tài chính và đào tạo nhân sự.",
+    "text_33": "Không có rủi ro tiềm ẩn vì Vibel International cam kết chỉ thu phí sau khi sử dụng dịch vụ."
   }
 }

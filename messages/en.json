@@ -1,4 +1,5 @@
 {
+  "read_more": "read more",
   "homePage": {
     "title": "Home Page",
     "welcome": "Welcome to our website!"
@@ -14,5 +15,97 @@
   },
   "home": {
     "title": "OVER 35 YEARS OF HOSPITALITY MANAGEMENT"
+  },
+  "footer": {
+    "Vibel International": "Vibel International",
+    "About Us": "About Us",
+    "Our Expert Team": "Our Expert Team",
+    "Our Services": "Our Services",
+    "Franchise Consulting Services": "Franchise Consulting Services",
+    "Management and Operation Consulting Sevice": "Management and Operation Consulting Sevice",
+    "Development Consulting and Project Supervision": "Development Consulting and Project Supervision",
+    "Contact": "Contact",
+    "contact_address_1": "Ho Chi Minh Office: 7th Floor, Me Linh Point Office Tower, No 2 Ngo Duc Ke Street, Ben Nghe Ward, District 1",
+    "contact_address_2": "Hai Phong Office: Harbour View Office Tower, No 12 Tran Phu Street, May To Ward, Ngo Quyen District",
+    "See Us On": "See Us On"
+  },
+  "service_landing": {
+    "OUR SERVICES": "OUR SERVICES",
+    "service_1": "HOTEL, APARTMENT, RESORT MANAGEMENT AND OPERATION CONSULTING",
+    "service_2": "FRANCHISE CONSULTING SERVICES",
+    "service_3": "DESIGN AND FUNCTIONAL MISSION RECOMMENDATIONS"
+  },
+  "choose_us_landing": {
+    "WHY YOU CHOOSE US": "WHY YOU CHOOSE US",
+    "Extensive Expertise": "Extensive Expertise",
+    "Over 10 years of experience in the hospitality industry": "Over 10 years of experience in the hospitality industry.",
+    "Global Network": "Global Network",
+    "Strong connections with leading hotel brands worldwide": "Strong connections with leading hotel brands worldwide.",
+    "Flexible Solutions": "Flexible Solutions",
+    "Tailored to meet the specific needs of each project": "Tailored to meet the specific needs of each project.",
+    "Commitment to Quality": "Commitment to Quality",
+    "Delivering results that exceed expectations": "Delivering results that exceed expectations."
+  },
+  "contact": {
+    "title": "Turn Your Vision Into RealitY",
+    "description": "Contact Vibel International today and receive support from leading experts in the hospitality industry",
+    "btn": "BOOK A MEETING"
+  },
+  "list_hotel": {
+    "HOT PROPERTY": "HOT PROPERTY",
+    "View a selection of the finest new developments": "View a selection of the finest new developments",
+    "The finest new hotels & resorts in Asia, from beautiful beaches to the largest mixed-use developments in the city": "The finest new hotels & resorts in Asia, from beautiful beaches to the largest mixed-use developments in the city.",
+    "READ MORE": "READ MORE",
+    "WYNDHAM HOTELS": "WYNDHAM HOTELS",
+    "OUR PICK OF WYNDHAM HOTELS": "OUR PICK OF WYNDHAM HOTELS",
+    "From a 200 rooms investment opportunity to a new development in Asia, these are the hottest properties you can view right now": "From a 200 rooms investment opportunity to anew development in Asia, these are the hottest properties you can view right now."
+  },
+  "hotel_manager": {
+    "title": "HOTEL MANAGEMENT AND OPERATION CONSULTING",
+    "description": "Operating a hotel, resort, or serviced apartment requires not only a deep understanding of the market but also a team of experts to optimize operations and profitability. A professional management company helps investors minimize risks, save time and costs through well-structured strategies, standardized processes, and innovative solutions. Moreover, they establish connections with major partners, tap into sustainable guest sources, and ensure exceptional guest experiences, elevating your brand value and property assets to new heights.",
+    "text_1": "Vibel International evaluates the business performance of hotels, resorts, and apartments in local areas, offering guidance on determining the appropriate hotel scale, providing hotel management consultancy, and developing short-term and long-term growth strategies while addressing competitive factors. The company also advises on the functional design of facilities and projects.",
+    "text_2": "Vibel International engages in consultancy from the initial stages of a project, optimizing operational efficiency, and saving significant time and costs for investors.",
+    "text_3": "Our approach includes",
+    "text_4": "Bringing together leading architects and experts in hotel design to create exceptional properties.",
+    "text_5": "Selecting experienced personnel with a deep understanding of Vietnamese culture and market dynamics to manage hotels.",
+    "text_6": "Delivering impeccable services tailored to meet every guest's need, with guest satisfaction as the cornerstone of our growth.",
+    "text_7": "Collaborating, innovating, and partnering with corporations and agencies to identify and attract target customer segments, maximizing hotel revenue potential."
+  },
+  "hotel_franchise_consulting": {
+    "title": "HOTEL FRANCHISE CONSULTING",
+    "description": "Franchise Solutions – The optimal choice for Investors. Vibel International partners with investors to select and implement franchise agreements with leading global hotel groups such as Wyndham, Accor, Marriott, and IHG... We offer tailored franchise models, from operational management to comprehensive business solutions, to optimize profitability, elevate brand value, and ensure sustainable success for your project.",
+    "text_1": "Vibel International – Your Strategic Partner in Hotel Franchise Consulting",
+    "text_2": "Vibel International conducts in-depth research and analysis of local markets for hotels, resorts, and serviced apartments using tools such as “FS,” “SWOT,” “P&L,” “SMART,” and “Projection.” We provide guidance on determining appropriate project scale, management strategies, and short- and long-term development plans to enhance the competitive edge of each project.",
+    "text_3": "Currently, Vibel International is the official representative of Wyndham Hotel Group (WHG) in Vietnam and collaborates closely with leading global hospitality brands such as Accor, Marriott, IHG, and others to offer franchise and hotel management services for properties across Vietnam.",
+    "text_4": "We offer two primary franchise models:",
+    "text_5": "Management Franchise: Combining operational support with comprehensive management.",
+    "text_6": "Full Business Format Franchise: Delivering holistic solutions, from business strategy to operations.",
+    "text_7": "With a team of seasoned experts and a global network of partners, Vibel International is committed to providing effective solutions, enhancing brand value, and optimizing profitability for investors.",
+    "text_8": "The benefits of “franchising” are:",
+    "text_9": "Use and legally own a strong, reputable brand, a big brand in the top 5 strongest brands in the world for the project in business development.",
+    "text_10": "Receive architectural and design advice for projects according to corporate standards.",
+    "text_11": "Before opening, the project's human resources system will be professionally trained and educated by experts.",
+    "text_12": "The project will be activated within the group's sales and marketing system and network (with more than 800 offices in different countries/territories).",
+    "text_13": "The project (hotel/resort) will be regularly inspected and evaluated to ensure the maintenance of customer service quality, at least twice a year.",
+    "text_14": "Brand, commercial image and project name are regularly promoted and developed by the Group's communication and marketing system.",
+    "text_15": "The project is linked and connected with the Group's partners (such as airlines, tourism organizations, banking systems, cards, etc.) globally with more than 128 countries and territories.",
+    "text_16": "Use the brand and do business under that brand, with revenue within a certain period of time, ensuring compliance with the model, business methods, business processes, and system operating terms.",
+    "text_17": "The franchisor will transfer standards, plans, business models and support in promoting and communicating the project.",
+    "text_18": "Management service after receiving the franchise (Optional)",
+    "text_19": "Project management, shouldering all the investor's worries in maintenance and business for the hotel according to international standards and regulations.",
+    "text_20": "The human resources system is regularly trained and educated in the most professional and updated way for the hotel.",
+    "text_21": "Establish and build business plans, strategies and systems for the project to bring the best revenue to the investor.",
+    "text_22": "We commited",
+    "text_23": "The contract term is short term, minimum 10 years, if the investor does not want to extend it further.",
+    "text_24": "Brand fee is paid only once, no additional payment required if contract is renewed",
+    "text_25": "Big brand, strong brand, in the top 5, strong brands in the world.",
+    "text_26": "The business, marketing and sales system is very large with more than 800 offices/systems/business and promotion networks located in 128 countries and territories.",
+    "text_27": "Your project has a large customer base of corporate regulars, members (along with over 80 million corporate customers)",
+    "text_28": "The transfer costs must meet all requirements and capabilities of the investor.",
+    "text_29": "Our brands are members of associations and tourism exhibition organizations around the world, accordingly, the products and projects of the investors are often present or appear in World Tourism programs.",
+    "text_30": "Since the project is a member of the brand, the project naturally benefits from the internal sales system (cross-selling/cross-profiting from hotels within the system).",
+    "text_31": "High communication and professional marketing support will easily access the customer system as well as the group's communication system to save marketing costs for the project.",
+    "text_32": "The investor is provided with the entire process, management standards, procedures, finance, training, and staff management.",
+    "text_33": "There is no potential risk when VIBEL INT commits to the investor to only pay the fee after using the service."
   }
 }

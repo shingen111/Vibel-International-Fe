@@ -1,11 +1,11 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "../../i18n/routing";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { Metadata } from "next";
 import "@/app/globals.css";
 import TheLayout from "@/components/layout/TheLayout";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Vibel International",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   icons: "/logo.jpg",
 };
 
-export default async function LocaleLayout({
+export default async function DashboardLayout({
   children,
   params,
 }: {
