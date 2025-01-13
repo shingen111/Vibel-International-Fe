@@ -10,7 +10,11 @@ import { notFound } from "next/navigation";
 export const metadata: Metadata = {
   title: "Vibel International",
   description: "Vibel international - OVER 35 YEARS OF HOSPITALITY MANAGEMENT",
-  icons: "/logo.jpg",
+  icons: {
+    icon: "/favicon/logo.jpg",
+    shortcut: "/favicon/logo.jpg",
+    apple: "/favicon/logo.jpg",
+  },
 };
 
 export default async function DashboardLayout({

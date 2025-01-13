@@ -18,7 +18,7 @@ export default function TheHeaderBackground({
       style={{ backgroundImage: `url(${url})` }}
     >
       <div className="flex flex-col justify-center items-center h-full w-full text-white">
-        <h1 className="text-[64px] font-bold text-center">{title}</h1>
+        <h1 className="text-[64px] font-normal text-center">{title}</h1>
         <Visibility visibility={description}>
           <p className="text-base max-w-[1058px] text-center">{description}</p>
         </Visibility>

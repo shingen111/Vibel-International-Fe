@@ -1,6 +1,15 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import Visibility from "../base/Visibility";
+import { Link } from "@/i18n/routing";
+
+function TextFormat({ text }: { text: string }) {
+  return (
+    <span key={1} className="text-[#8E8E8E] text-sm font-normal">
+      {text}
+    </span>
+  );
+}
 
 export default function TheFooter() {
   const t = useTranslations("footer");
@@ -8,22 +17,32 @@ export default function TheFooter() {
   const DEFINE_FOOTERS = [
     {
       title: "Vibel International",
-      items: [t("About Us"), t("Our Expert Team")],
+      items: [
+        <TextFormat key={1} text={t("About Us")} />,
+        <TextFormat key={2} text={t("Our Expert Team")} />,
+      ],
     },
     {
       title: t("Our Services"),
       items: [
-        t("Franchise Consulting Services"),
-        t("Management and Operation Consulting Sevice"),
+        <Link href={""} key={1} className="text-[#8E8E8E] text-sm font-normal">
+          {t("Franchise Consulting Services")}
+        </Link>,
+        <Link href={""} key={2} className="text-[#8E8E8E] text-sm font-normal">
+          {t("Management and Operation Consulting Sevice")}
+        </Link>,
+        <Link href={""} key={3} className="text-[#8E8E8E] text-sm font-normal">
+          {t("Development Consulting and Project Supervision")}
+        </Link>,
       ],
     },
     {
       title: t("Contact"),
       items: [
-        "070 3538 930",
-        "Email: adm@vibel-international.com",
-        t("contact_address_1"),
-        t("contact_address_2"),
+        <TextFormat key={1} text="070 3538 930" />,
+        <TextFormat key={2} text="Email: adm@vibel-international.com" />,
+        <TextFormat key={3} text={t("contact_address_1")} />,
+        <TextFormat key={4} text={t("contact_address_2")} />,
       ],
     },
     {
@@ -48,14 +67,11 @@ export default function TheFooter() {
                 {item.title}
               </span>
               <Visibility visibility={item.items?.length}>
-                {item.items?.map((subItem, subIndex) => (
-                  <span
-                    key={subIndex}
-                    className="text-[#8E8E8E] text-sm font-normal"
-                  >
-                    {subItem}
-                  </span>
-                ))}
+                <div className="flex flex-col justify-start items-start space-y-1">
+                  {item.items?.map((item, subIndex) => (
+                    <div key={subIndex}>{item}</div>
+                  ))}
+                </div>
               </Visibility>
               <Visibility visibility={item.icon}>{item.icon}</Visibility>
             </div>
