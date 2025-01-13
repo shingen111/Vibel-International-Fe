@@ -38,7 +38,7 @@ export default function TheHeader() {
       </div>
       <div className="border-t border-b w-full flex justify-center items-center h-[100px]">
         <div className="container flex justify-between items-center w-full space-x-[54px] ">
-          <Link href={"/"}>
+          <Link href={"/"} className=" w-[107px]">
             <Image
               className="hover-grow"
               height={97}
@@ -47,7 +47,7 @@ export default function TheHeader() {
               alt={"Logo"}
             />
           </Link>
-          <div className="flex justify-between items-center w-full space-x-[30px]">
+          <div className="flex justify-between items-center w-full">
             {DEFINE_MENUS.map((item, index) => (
               <Link key={index} href={item.href}>
                 <span className="cursor-pointer text-white text-sm font-normal whitespace-nowrap hover-grow">
