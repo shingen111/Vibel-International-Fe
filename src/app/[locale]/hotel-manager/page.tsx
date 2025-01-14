@@ -1,8 +1,14 @@
-import HotelManager from '@/modules/hotel-manager/HotelManager'
-import React from 'react'
+import HotelManager from "@/modules/hotel-manager/HotelManager";
+import { IParams } from "@/types/params.type";
+import { setRequestLocale } from "next-intl/server";
+import React from "react";
 
-export default function page() {
-  return (
-    <HotelManager />
-  )
+interface IProps {
+  params: IParams;
+}
+
+export default async function page({ params }: IProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  return <HotelManager />;
 }
