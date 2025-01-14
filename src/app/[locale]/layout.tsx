@@ -9,6 +9,8 @@ import "@/app/globals.css";
 import TheLayout from "@/components/layout/TheLayout";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IProps {
   children: React.ReactNode;
@@ -53,6 +55,7 @@ export default async function DashboardLayout({ children, params }: IProps) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <AppRouterCacheProvider>
+            <ToastContainer />
             <TheLayout>{children}</TheLayout>
           </AppRouterCacheProvider>
         </NextIntlClientProvider>

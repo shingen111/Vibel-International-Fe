@@ -1,4 +1,4 @@
-import Insights from "@/modules/insight/Insights";
+import BookMeeting from "@/modules/book-a-meeting/BookMeeting";
 import { IParams } from "@/types/params.type";
 import { setRequestLocale } from "next-intl/server";
 
@@ -9,5 +9,5 @@ interface IProps {
 export default async function page({ params }: IProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <Insights />;
+  return <BookMeeting />;
 }

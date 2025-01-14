@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import BaseButtonWhite from "./BaseButtonWhite";
+import { DEFINE_ROUTERS } from "@/constants/routers";
 
 export default function BaseContactSection() {
   const t = useTranslations("contact");
@@ -13,10 +14,8 @@ export default function BaseContactSection() {
     >
       <div className="absolute left-[40%] top-[-14px] py-[67px] px-6 bg-[#2E6C92] flex flex-col justify-between items-start space-y-[44px] w-[384px] min-h-[408px]">
         <h3 className="text-sm font-[300] text-white">{t("title")}</h3>
-        <p className="text-base text-white font-normal">
-          {t("description")}
-        </p>
-        <BaseButtonWhite title={t("btn")} />
+        <p className="text-base text-white font-normal">{t("description")}</p>
+        <BaseButtonWhite title={t("btn")} href={DEFINE_ROUTERS.bookMeeting} />
       </div>
     </div>
   );

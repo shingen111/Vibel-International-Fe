@@ -150,11 +150,11 @@
   "book_a_meeting": {
     "title": "BOOK A MEETING",
     "description": "Start your journey of developing and optimizing your hotel project with Vibel International. We will listen, advise, and provide tailored solutions to help you achieve your business goals and maximize investment returns. Schedule a meeting with us today to discuss your project in detail and explore collaboration opportunities.",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
+    "name": "Name *",
+    "email": "Email *",
+    "phone": "Phone *",
     "select_a_topic": "Select a Topic",
-    "yours_message": "Your Message",
+    "yours_message": "Your Message *",
     "policy": "By providing Vibel International your contact information, you acknowledge and agree to our <code>Privacy Policy</code> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.",
     "submit": "Submit"
   }

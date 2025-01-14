@@ -1,17 +1,18 @@
+import { Link } from "@/i18n/routing";
 import React from "react";
 
-interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface IProps {
   title: string;
+  href: string;
 }
 
-export default function BaseButtonWhite({ title, ...props }: IProps) {
+export default function BaseButtonWhite({ title, href }: IProps) {
   return (
-    <button
-      {...props}
-      type="button"
+    <Link
+      href={href}
       className="text-white p-[14px] flex justify-center items-center bg-transparent border border-white rounded-md hover:bg-white hover:bg-opacity-30"
     >
       <span className="whitespace-nowrap text-sm font-extralight">{title}</span>
-    </button>
+    </Link>
   );
 }

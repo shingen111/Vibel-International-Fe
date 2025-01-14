@@ -11,6 +11,7 @@ const DEFINE_ROUTERS = {
   developConsulting: "/develop-consulting-and-project-supervision",
   insights: "/insights",
   aboutUs: "/about-us",
+  bookMeeting: "/book-a-meeting",
 };
 
 export { DEFINE_ROUTERS_ADMIN, DEFINE_ROUTERS };

@@ -146,5 +146,16 @@
     "text_9": "Thân thiện với môi trường, hướng đến mục tiêu “xanh, sạch, đẹp”.",
     "text_10": "Ứng dụng công nghệ thông minh 4.0 để tối ưu hóa chi phí và bảo vệ môi trường.",
     "text_11": "ĐỘI NGŨ CHUYÊN GIA"
+  },
+  "book_a_meeting": {
+    "title": "ĐẶT LỊCH TƯ VẤN",
+    "description": "Bắt đầu hành trình phát triển và tối ưu hóa dự án khách sạn của bạn với Vibel International. Chúng tôi sẽ lắng nghe, tư vấn và cung cấp những giải pháp phù hợp, giúp bạn đạt được mục tiêu kinh doanh và tối đa hóa lợi nhuận đầu tư. Đặt lịch gặp gỡ với chúng tôi ngay hôm nay để cùng thảo luận chi tiết về dự án và cơ hội hợp tác. - viết sang tiếng anh",
+    "name": "Tên *",
+    "email": "Email *",
+    "phone": "Số điện thoại *",
+    "select_a_topic": "Select a Topic",
+    "yours_message": "Lời nhắn của bạn *",
+    "policy": "Bằng cách cung cấp thông tin liên lạc cho Vibel International, bạn xác nhận và đồng ý với <code>Chính sách Bảo mật</code> của chúng tôi và đồng ý nhận các thông tin tiếp thị, bao gồm qua các cuộc gọi tự động, tin nhắn và email, một số trong đó có thể sử dụng giọng nói nhân tạo hoặc được ghi sẵn. Sự đồng ý này không cần thiết cho việc mua bất kỳ sản phẩm hoặc dịch vụ nào, và bạn có thể chọn không tham gia bất cứ lúc nào. Để từ chối nhận tin nhắn, bạn có thể trả lời \"dừng\" bất cứ lúc nào. Để từ chối nhận email, bạn có thể nhấp vào liên kết hủy đăng ký trong các email. Có thể có phí cho tin nhắn và dữ liệu.",
+    "submit": "Gửi"
   }
 }
