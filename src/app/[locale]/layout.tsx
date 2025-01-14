@@ -1,30 +1,44 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { Metadata } from "next";
 import "@/app/globals.css";
 import TheLayout from "@/components/layout/TheLayout";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Vibel International",
-  description: "Vibel international - OVER 35 YEARS OF HOSPITALITY MANAGEMENT",
-  icons: {
-    icon: "/favicon/logo.jpg",
-    shortcut: "/favicon/logo.jpg",
-    apple: "/favicon/logo.jpg",
-  },
-};
-
-export default async function DashboardLayout({
-  children,
-  params,
-}: {
+interface IProps {
   children: React.ReactNode;
   params: Record<string, any>;
-}) {
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Omit<IProps, "children">) {
   const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespaces: ["home", "layout", "footer"],
+  });
+  return {
+    title: "Vibel International",
+    description: `Vibel international - ${t("home.title")}`,
+    icons: {
+      icon: "/favicon/logo.jpg",
+      shortcut: "/favicon/logo.jpg",
+      apple: "/favicon/logo.jpg",
+    },
+  };
+}
+
+export default async function DashboardLayout({ children, params }: IProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();

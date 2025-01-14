@@ -17,6 +17,8 @@ const eslintConfig = [
       "no-console": "warn",
       "prefer-const": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-page-custom-font": "off",
     },
   },
 ];
