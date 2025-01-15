@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Drawer, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
