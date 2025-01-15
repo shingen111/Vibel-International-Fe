@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { Drawer, List, ListItem, ListItemText, Typography } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -61,11 +61,13 @@ const BaseDrawer: React.FC<IProps> = ({ open, onToggle }) => {
       >
         {DEFINE_MENUS.map((menu, index) => (
           <ListItem key={index} component="a" href={menu.href}>
-            <ListItemText primary={menu.label} style={{ color: "white" }} />
+            <Typography fontSize={12} color="white">
+              {menu.label}
+            </Typography>
           </ListItem>
         ))}
       </List>
-      <span className="text-sm text-white text-center w-full px-5">
+      <span className="sm:text-sm text-xs text-white text-center w-full px-12">
         {" "}
         {t("title")}
       </span>
