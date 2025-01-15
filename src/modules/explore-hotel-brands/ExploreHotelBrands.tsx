@@ -48,7 +48,7 @@ const DEFINE_LIST_BRAND = [
   "/explore-hotel-brands/the-peninsula.svg",
   "/explore-hotel-brands/waldorf-astoria.svg",
   "/explore-hotel-brands/aman.svg",
-  "/explore-hotel-brands/andaz.png",
+  "/explore-hotel-brands/andaz.svg",
   "/explore-hotel-brands/banyan-tree.svg",
 ];
 
@@ -61,7 +61,7 @@ export default function ExploreHotelBrands() {
       description={t("description")}
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[78px]">
-        <div className="max-w-[1024] grid grid-cols-5 gap-[33px]">
+        <div className="sm:max-w-[1024] max-w-screen-sm grid sm:grid-cols-5 grid-cols-1 gap-[33px]">
           {DEFINE_LIST_BRAND.map((item, index) => (
             <ItemSection key={index} url={item} />
           ))}

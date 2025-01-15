@@ -1,4 +1,5 @@
 import BaseContactSection from "@/components/base/BaseContactSection";
+import BaseRenderText from "@/components/base/BaseRenderText";
 import TheBody from "@/components/layout/TheBody";
 import { useTranslations } from "next-intl";
 import React from "react";
@@ -12,63 +13,57 @@ export default function HotelFranchiseConsulting() {
       description={t("description")}
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[56px]">
-        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] py-[48px] px-[76px]">
-          <span className="text-[20px] font-normal text-black">
-            {t("text_1")}
-          </span>
-          <span className="text-[20px] font-normal text-black my-5">
-            {t("text_2")}
-          </span>
-          <span className="text-[20px] font-normal text-black my-5">
-            {t("text_3")}
-          </span>
-          <span className="text-[20px] font-normal text-black">
-            {t("text_4")}
-          </span>
+        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] sm:py-[48px] sm:px-[76px] p-[24px]">
+          <BaseRenderText text={t("text_1")} />
+          <div className="my-5">
+            <BaseRenderText text={t("text_2")} />
+          </div>
+          <div className="my-5">
+            <BaseRenderText text={t("text_3")} />
+          </div>
+          <BaseRenderText text={t("text_4")} />
           <ul className="list-disc list-inside ps-3">
-            <li className="text-[20px] font-normal text-black">{t("text_5")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_6")}</li>
+            <BaseRenderText text={t("text_5")} component="li" />
+            <BaseRenderText text={t("text_6")} component="li" />
           </ul>
-          <span className="text-[20px] font-normal text-black">
-            {t("text_7")}
-          </span>
-          <span className="text-[20px] font-normal text-black my-5">
-            {t("text_8")}
-          </span>
+          <BaseRenderText text={t("text_7")} />
+          <div className="my-5">
+            <BaseRenderText text={t("text_8")} />
+          </div>
           <ul className="list-disc list-inside ps-3">
-            <li className="text-[20px] font-normal text-black">{t("text_9")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_10")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_11")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_12")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_13")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_14")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_15")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_16")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_17")}</li>
+            <BaseRenderText text={t("text_9")} component="li" />
+            <BaseRenderText text={t("text_10")} component="li" />
+            <BaseRenderText text={t("text_11")} component="li" />
+            <BaseRenderText text={t("text_12")} component="li" />
+            <BaseRenderText text={t("text_13")} component="li" />
+            <BaseRenderText text={t("text_14")} component="li" />
+            <BaseRenderText text={t("text_15")} component="li" />
+            <BaseRenderText text={t("text_16")} component="li" />
+            <BaseRenderText text={t("text_17")} component="li" />
           </ul>
-          <span className="text-[20px] font-normal text-black my-5">
-            {t("text_18")}
-          </span>
+          <div className="my-5">
+            <BaseRenderText text={t("text_18")} />
+          </div>
           <ul className="list-disc list-inside ps-3">
-            <li className="text-[20px] font-normal text-black">{t("text_19")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_20")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_21")}</li>
+            <BaseRenderText text={t("text_19")} component="li" />
+            <BaseRenderText text={t("text_20")} component="li" />
+            <BaseRenderText text={t("text_21")} component="li" />
           </ul>
-          <span className="text-[20px] font-normal text-black my-5">
-            {t("text_22")}
-          </span>
+          <div className="my-5">
+            <BaseRenderText text={t("text_22")} />
+          </div>
           <ul className="list-disc list-inside ps-3">
-            <li className="text-[20px] font-normal text-black">{t("text_23")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_24")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_25")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_26")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_27")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_28")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_29")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_30")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_31")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_32")}</li>
-            <li className="text-[20px] font-normal text-black">{t("text_33")}</li>
+            <BaseRenderText text={t("text_23")} component="li" />
+            <BaseRenderText text={t("text_24")} component="li" />
+            <BaseRenderText text={t("text_25")} component="li" />
+            <BaseRenderText text={t("text_26")} component="li" />
+            <BaseRenderText text={t("text_27")} component="li" />
+            <BaseRenderText text={t("text_28")} component="li" />
+            <BaseRenderText text={t("text_29")} component="li" />
+            <BaseRenderText text={t("text_30")} component="li" />
+            <BaseRenderText text={t("text_31")} component="li" />
+            <BaseRenderText text={t("text_32")} component="li" />
+            <BaseRenderText text={t("text_33")} component="li" />
           </ul>
         </div>
         <BaseContactSection />

@@ -1,4 +1,5 @@
 import BaseContactSection from "@/components/base/BaseContactSection";
+import BaseRenderText from "@/components/base/BaseRenderText";
 import TheBody from "@/components/layout/TheBody";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -46,51 +47,33 @@ export default function AboutUsPage() {
       description={t("description")}
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[56px]">
-        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] py-[61px] px-[76px] w-full">
-          <span className="text-[20px] font-normal text-black">
-            {t("text_1")}
-          </span>
-          <span className="text-[20px] font-normal text-black">
-            {t("text_2")}
-          </span>
-          <span className="text-[20px] font-normal text-black">
-            {t("text_3")}
-          </span>
+        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] w-full sm:py-[61px] sm:px-[76px] p-[24px]">
+          <BaseRenderText text={t("text_1")} />
+          <BaseRenderText text={t("text_2")} />
+          <BaseRenderText text={t("text_3")} />
         </div>
-        <h1 className="text-[50px] font-normal text-center max-w-[860px]">
+        <h1 className="sm:text-[50px] text-[32px] font-normal text-center sm:max-w-[860px] max-w-screen-sm">
           {t("text_4")}
         </h1>
-        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] py-[61px] px-[76px] w-full">
+        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] sm:py-[61px] sm:px-[76px] p-[24px] w-full">
           <ul className="list-disc list-inside ps-3">
-            <li className="text-[20px] font-normal text-black">
-              {t("text_5")}
-            </li>
-            <li className="text-[20px] font-normal text-black">
-              {t("text_6")}
-            </li>
-            <li className="text-[20px] font-normal text-black">
-              {t("text_7")}
-            </li>
-            <li className="text-[20px] font-normal text-black">
-              {t("text_8")}
-            </li>
-            <li className="text-[20px] font-normal text-black">
-              {t("text_9")}
-            </li>
-            <li className="text-[20px] font-normal text-black">
-              {t("text_10")}
-            </li>
+            <BaseRenderText text={t("text_5")} component="li" />
+            <BaseRenderText text={t("text_6")} component="li" />
+            <BaseRenderText text={t("text_7")} component="li" />
+            <BaseRenderText text={t("text_8")} component="li" />
+            <BaseRenderText text={t("text_9")} component="li" />
+            <BaseRenderText text={t("text_10")} component="li" />
           </ul>
         </div>
-        <div className="flex flex-col justify-start items-center bg-[#F5F5F5] py-[48px] px-[76px] w-full space-y-[34px] !mt-[28px]">
-          <h3 className="text-[32px] font-normal text-center">
+        <div className="flex flex-col justify-start items-center bg-[#F5F5F5] sm:py-[61px] sm:px-[76px] p-[24px] w-full space-y-[34px] !mt-[28px]">
+          <h3 className="text-[32px] text- font-normal text-center">
             {t("text_11")}
           </h3>
-          <div className="grid sm:grid-cols-3 gap-x-[14px] gap-y-[34px]">
+          <div className="grid sm:grid-cols-3 grid-cols-1 gap-x-[14px] gap-y-[34px]">
             {DEFINE_EXPERT.map((item, index) => (
               <div
                 key={index}
-                className="w-[376px] h-[370px] pt-[32px] space-y-[28px] bg-white px-1"
+                className="sm:w-[376px] sm:h-[370px] min-h-[286px] pt-[32px] space-y-[28px] bg-white px-1"
               >
                 <div className="flex justify-center items-center">
                   <Image
@@ -102,10 +85,10 @@ export default function AboutUsPage() {
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                  <span className="text-[28px] font-medium text-black text-center">
+                  <span className="sm:text-[28px] text-lg font-medium text-black text-center">
                     {item.name}
                   </span>
-                  <span className="text-[14px] font-normal text-[#707070] text-center">
+                  <span className="sm:text-[14px] text-xs font-normal text-[#707070] text-center">
                     {item.position}
                   </span>
                 </div>

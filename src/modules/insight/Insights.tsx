@@ -62,7 +62,7 @@ export default function Insights() {
       description={t("insights.description")}
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[78px]">
-        <div className="max-w-[1187] grid grid-cols-3 gap-x-[100px] gap-y-[60px]">
+        <div className="sm:max-w-[1187] max-w-screen-sm grid sm:grid-cols-3 grid-cols-1 gap-x-[100px] gap-y-[60px]">
           {DEFINE_INSIGHTS.map((item, index) => (
             <div className="flex flex-col items-center w-[329px]" key={index}>
               <ImageHover src={item.image} />

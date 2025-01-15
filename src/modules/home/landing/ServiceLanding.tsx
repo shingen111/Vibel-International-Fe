@@ -21,11 +21,11 @@ export default function ServiceLanding() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center p-12 space-y-7 w-full bg-[#F5F5F5]">
-      <h3 className="text-4xl text-black font-normal">{t("OUR SERVICES")}</h3>
-      <div className="flex flex-row justify-center items-center space-x-[91px]">
+    <div className="flex flex-col justify-center items-center sm:p-12 p-5 space-y-7 w-full bg-[#F5F5F5]">
+      <h3 className="text-4xl text-black font-normal text-center">{t("OUR SERVICES")}</h3>
+      <div className="flex sm:flex-row flex-col justify-center items-center sm:space-x-[91px] w-full">
         {DEFINE_SERVICE.map((item, index) => (
-          <div className="flex flex-col items-center w-[300px]" key={index}>
+          <div className="flex flex-col items-center sm:w-[300px] w-auto" key={index}>
             <ImageHover src={item.image} />
             <div className="bg-white h-[258px] w-full flex justify-center items-center">
               <h4 className="text-xl text-black font-light text-center">

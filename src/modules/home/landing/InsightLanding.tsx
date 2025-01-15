@@ -27,7 +27,7 @@ export default function InsightLanding() {
   return (
     <div className="flex flex-col justify-start items-center space-y-6 w-full bg-white">
       <h3 className="text-4xl text-black font-normal uppercase">insights</h3>
-      <div className="flex flex-row justify-center items-center space-x-[100px]">
+      <div className="flex sm:flex-row flex-col justify-center items-center sm:space-x-[100px] space-x-0 sm:space-y-0 space-y-5">
         {DEFINE_INSIGHTS.map((item, index) => (
           <div className="flex flex-col items-center w-[329px]" key={index}>
             <ImageHover src={item.image} />

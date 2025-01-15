@@ -34,23 +34,23 @@ export default function ChooseUs() {
 
   return (
     <div className="flex flex-col justify-center items-center pt-12 space-y-7 w-full bg-[#F5F5F5]">
-      <h3 className="text-4xl text-black font-normal">
+      <h3 className="sm:text-4xl text-3xl text-center text-black font-normal">
         {t("WHY YOU CHOOSE US")}
       </h3>
-      <div className="w-full">
+      <div className="w-full flex flex-col space-y-5 sm:space-y-0">
         {DEFINE_ITEMS.map((item, index) => (
           <div
             key={index}
-            className={`flex justify-center items-center w-full ${
-              item.isRevert ? "flex-row-reverse" : "flex-row"
+            className={`flex justify-center items-center w-full flex-col ${
+              item.isRevert ? "sm:flex-row-reverse" : "sm:flex-row"
             }`}
           >
-            <div className="w-[50%]">
+            <div className="sm:w-[50%] w-full">
               <ImageHover src={item.img} />
             </div>
-            <div className="flex flex-col items-center justify-center w-[50%]">
+            <div className="flex flex-col items-center justify-center sm:w-[50%] w-full">
               <div className="text-start">
-                <h4 className="text-4xl text-[#222222]">{item.title}</h4>
+                <h4 className="sm:text-4xl text-3xl text-[#222222]">{item.title}</h4>
                 <p className="text-sm text-[#707070]">{item.description}</p>
               </div>
             </div>
