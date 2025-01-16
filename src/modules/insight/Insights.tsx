@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import BaseContactSection from "@/components/base/BaseContactSection";
 import ImageHover from "@/components/base/ImageHover";
+import Visibility from "@/components/base/Visibility";
 import TheBody from "@/components/layout/TheBody";
 import { DEFINE_ROUTERS } from "@/constants/routers";
 import { Pagination, Stack } from "@mui/material";
@@ -18,12 +19,15 @@ interface InsightProps {
 
 export default function Insights({ data, page, total, limit }: InsightProps) {
   const router = useRouter();
-  
+
   const t = useTranslations();
 
   const totalPages = Math.ceil(total / limit);
 
-  const handleChangePage = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChangePage = (
+    _event: React.ChangeEvent<unknown>,
+    value: number
+  ) => {
     router.replace(`${DEFINE_ROUTERS.insights}?page=${value}`);
   };
 
@@ -58,15 +62,22 @@ export default function Insights({ data, page, total, limit }: InsightProps) {
             </div>
           ))}
         </div>
-        <Stack
-          className="sm:max-w-[1187] max-w-screen-sm"
-          direction="row"
-          justifyContent="end"
-          alignItems="center"
-          sx={{ width: "100%" }}
-        >
-          <Pagination page={page} count={totalPages} color="primary" onChange={handleChangePage}/>
-        </Stack>
+        <Visibility visibility={total}>
+          <Stack
+            className="sm:max-w-[1187] max-w-screen-sm"
+            direction="row"
+            justifyContent="end"
+            alignItems="center"
+            sx={{ width: "100%" }}
+          >
+            <Pagination
+              page={page}
+              count={totalPages}
+              color="primary"
+              onChange={handleChangePage}
+            />
+          </Stack>
+        </Visibility>
         <BaseContactSection />
       </div>
     </TheBody>

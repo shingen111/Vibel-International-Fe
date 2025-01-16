@@ -30,7 +30,7 @@ export default function SwitchLanguage() {
   return (
     <div className="flex flex-row justify-between items-center space-x-1">
       <div
-        className={`cursor-pointer text-white hover-grow ${
+        className={`cursor-pointer text-white hover-grow text-sm sm:text-base ${
           locale === "vi" ? "font-bold" : ""
         }`}
         onClick={() => onChangeLocale("vi")}
@@ -39,7 +39,7 @@ export default function SwitchLanguage() {
       </div>
       <span className="text-white">|</span>
       <div
-        className={`cursor-pointer text-white hover-grow ${
+        className={`cursor-pointer text-white hover-grow text-sm sm:text-base ${
           locale === "en" ? "font-bold" : ""
         }`}
         onClick={() => onChangeLocale("en")}

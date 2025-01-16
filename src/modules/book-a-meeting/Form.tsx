@@ -66,7 +66,7 @@ export default function Form() {
   };
 
   return (
-    <div className="bg-[#2E6C92] sm:min-h-[846px] sm:max-w-[576px] px-[56px] py-[65px] rounded-md flex flex-col justify-start items-start space-y-4">
+    <div className="bg-[#2E6C92] sm:min-h-[846px] sm:max-w-[576px] max-w-[476px] px-[56px] py-[65px] rounded-md flex flex-col justify-start items-start space-y-4">
       <InputForm
         value={form.name}
         placeholder={t("name")}
@@ -104,14 +104,14 @@ export default function Form() {
             onChange={() => setIsChecked(!isChecked)}
           />
         </div>
-        <p className="text-white text-sm font-medium text-justify">
+        <p className="text-white sm:text-sm text-xs font-medium text-justify">
           {t.rich("policy", {
             code: (chunks) => <a className="font-bold">{chunks}</a>,
           })}
         </p>
       </div>
       <button
-        className="p-[18px] w-[120px] border border-white rounded-[100px] !mt-5 text-white hover:bg-white hover:bg-opacity-30"
+        className="sm:p-[18px] p-3 w-[120px] border border-white rounded-[100px] !mt-5 text-white hover:bg-white hover:bg-opacity-30"
         onClick={handleClick}
       >
         {t("submit")}

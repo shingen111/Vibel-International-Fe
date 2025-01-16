@@ -33,7 +33,7 @@ export default function MobileHeader() {
         position="fixed"
         style={{
           transition: "top 0.3s",
-          top: `${showHeader ? 0 : -64}px`,
+          top: `${showHeader ? 0 : 0}px`,
           background: `${lastScrollY < 50 ? "transparent" : "black"}`,
         }}
       >

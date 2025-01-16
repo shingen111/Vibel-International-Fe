@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { DEFINE_ROUTERS } from "@/constants/routers";
 import BaseButtonWhite from "./BaseButtonWhite";
+import SwitchLanguage from "./SwitchLanguage";
 
 interface IProps {
   open: boolean;
@@ -72,6 +73,7 @@ const BaseDrawer: React.FC<IProps> = ({ open, onToggle }) => {
         {t("title")}
       </span>
       <BaseButtonWhite title={t("contact")} href={DEFINE_ROUTERS.bookMeeting} />
+      <SwitchLanguage />
     </div>
   );
 

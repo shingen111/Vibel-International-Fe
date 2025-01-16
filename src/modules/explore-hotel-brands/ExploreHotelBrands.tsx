@@ -8,7 +8,7 @@ function ItemSection({ url }: { url: string }) {
   return (
     <div className="flex flex-col justify-center items-center w-[185px] h-[170px] border border-[#9B9B9B21] border-solid">
       <div
-        className="flex justify-center items-center"
+        className="flex justify-center items-center bg-black"
         style={{
           height: 80,
           width: 130,
@@ -16,7 +16,7 @@ function ItemSection({ url }: { url: string }) {
       >
         <Image
           height={80}
-          width={133}
+          width={130}
           src={url}
           alt="logo"
           className="h-full w-full object-contain"
@@ -27,29 +27,29 @@ function ItemSection({ url }: { url: string }) {
 }
 
 const DEFINE_LIST_BRAND = [
-  "/explore-hotel-brands/wyndham.png",
-  "/explore-hotel-brands/accor.png",
-  "/explore-hotel-brands/marriott.png",
-  "/explore-hotel-brands/belmond.svg",
-  "/explore-hotel-brands/conrad.svg",
-  "/explore-hotel-brands/fairmont.svg",
-  "/explore-hotel-brands/IHG.svg",
-  "/explore-hotel-brands/kempinski.svg",
-  "/explore-hotel-brands/mandarin-oriental.svg",
-  "/explore-hotel-brands/park-hyatt.svg",
-  "/explore-hotel-brands/treferred.svg",
-  "/explore-hotel-brands/relais-chateaux.svg",
-  "/explore-hotel-brands/rose-wood.svg",
-  "/explore-hotel-brands/shangri-la.svg",
-  "/explore-hotel-brands/singita.svg",
-  "/explore-hotel-brands/six-senses.svg",
-  "/explore-hotel-brands/small-luxury-hotels.svg",
-  "/explore-hotel-brands/the-leading-hotels.svg",
-  "/explore-hotel-brands/the-peninsula.svg",
-  "/explore-hotel-brands/waldorf-astoria.svg",
-  "/explore-hotel-brands/aman.svg",
-  "/explore-hotel-brands/andaz.svg",
-  "/explore-hotel-brands/banyan-tree.svg",
+  "/explore-hotel-brands/footer_alltra.svg",
+  "/explore-hotel-brands/footer_americ-inn-2.svg",
+  "/explore-hotel-brands/footer_baymont-2.svg",
+  "/explore-hotel-brands/footer_daysinn-1.svg",
+  "/explore-hotel-brands/footer_dazzler-2.svg",
+  "/explore-hotel-brands/footer_dolce-1.svg",
+  "/explore-hotel-brands/footer_echo-1.svg",
+  "/explore-hotel-brands/footer_hawthorn-2.svg",
+  "/explore-hotel-brands/footer_howard-johnson-1.svg",
+  "/explore-hotel-brands/footer_la-quinta.svg",
+  "/explore-hotel-brands/footer_microtel-1.svg",
+  "/explore-hotel-brands/footer_ramada-2.svg",
+  "/explore-hotel-brands/footer_registry.svg",
+  "/explore-hotel-brands/footer_super-8-1.svg",
+  "/explore-hotel-brands/footer_trademark-1.svg",
+  "/explore-hotel-brands/footer_travelodge-1.svg",
+  "/explore-hotel-brands/footer_tryp-1.svg",
+  "/explore-hotel-brands/footer_wyn-garden-1.svg",
+  "/explore-hotel-brands/footer_wyn-grand-1.svg",
+  "/explore-hotel-brands/footer_wyngate-1.svg",
+  "/explore-hotel-brands/footer-esplendor.svg",
+  "/explore-hotel-brands/Wyndham.svg",
+  
 ];
 
 export default function ExploreHotelBrands() {

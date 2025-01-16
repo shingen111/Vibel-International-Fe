@@ -17,7 +17,7 @@ export default function BookMeeting() {
           backgroundImage: "url('/booking/booking-bg.png')",
         }}
       >
-        <div className="absolute top-[120px] left-[218px]">
+        <div className="absolute sm:top-[120px] sm:left-[218px] top-[58px] left-0">
           <Form />
         </div>
       </div>
