@@ -15,14 +15,33 @@
     "@mui/icons-material": "^6.4.0",
     "@mui/material": "^6.4.0",
     "@mui/material-nextjs": "^6.3.1",
+    "@portabletext/react": "^3.2.0",
+    "@sanity/icons": "^3.5.7",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.70.0",
     "axios": "^1.7.9",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
     "js-cookie": "^3.0.5",
     "next": "15.1.4",
     "next-intl": "^3.26.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-toastify": "^11.0.2"
+    "next-sanity": "^9.8.37",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-toastify": "^11.0.2",
+    "sanity": "^3.70.0",
+    "styled-components": "^6.1.14"
+  },
+  "packageManager": "pnpm@9.15.2",
+  "pnpm": {
+    "pnpm": {
+      "peerDependencyRules": {
+        "allowAny": [
+          "react",
+          "react-dom"
+        ]
+      }
+    }
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

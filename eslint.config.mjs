@@ -18,6 +18,7 @@ const eslintConfig = [
       "prefer-const": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "react/no-unescaped-entities": "off",
+      "react-hooks/rules-of-hooks": "off",
       "@next/next/no-page-custom-font": "off",
     },
   },

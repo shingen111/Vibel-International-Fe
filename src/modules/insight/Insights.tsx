@@ -1,59 +1,31 @@
+"use client"
 import BaseContactSection from "@/components/base/BaseContactSection";
 import ImageHover from "@/components/base/ImageHover";
 import TheBody from "@/components/layout/TheBody";
+import { DEFINE_ROUTERS } from "@/constants/routers";
+import { Pagination, Stack } from "@mui/material";
 import { useTranslations } from "next-intl";
+import { SanityDocument } from "next-sanity";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-export default function Insights() {
+interface InsightProps {
+  data: SanityDocument[];
+  page: number;
+  total: number;
+  limit: number;
+}
+
+export default function Insights({ data, page, total, limit }: InsightProps) {
+  const router = useRouter();
+  
   const t = useTranslations();
 
-  const DEFINE_INSIGHTS = [
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-    {
-      title: "A Different Kind of All-Inclusive",
-      description: "Sophistication doesn’t need a wristband to impress.",
-      image: "/landing/insight.png",
-    },
-  ];
+  const totalPages = Math.ceil(total / limit);
+
+  const handleChangePage = (_event: React.ChangeEvent<unknown>, value: number) => {
+    router.replace(`${DEFINE_ROUTERS.insights}?page=${value}`);
+  };
 
   return (
     <TheBody
@@ -63,20 +35,22 @@ export default function Insights() {
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[78px]">
         <div className="sm:max-w-[1187] max-w-screen-sm grid sm:grid-cols-3 grid-cols-1 gap-x-[100px] gap-y-[60px]">
-          {DEFINE_INSIGHTS.map((item, index) => (
-            <div className="flex flex-col items-center w-[329px]" key={index}>
-              <ImageHover src={item.image} />
-              <p className="text-[#808284] text-xs font-medium text-start w-full">
-                WYNDHAM HOTEL
-              </p>
+          {data.map((item, index) => (
+            <div
+              className="flex flex-col justify-start items-center w-[329px] min-h-[364px]"
+              key={index}
+            >
+              <div className="w-full h-[184px]">
+                <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
+              </div>
               <span className="text-start text-[20px] font-[700] mt-[18px] w-full">
                 {item.title}
               </span>
-              <p className="mt-[16px] text-base text-[#808284] font-normal">
+              <p className="mt-[16px] text-base text-[#808284] font-normal text-start w-full">
                 {item.description}
               </p>
               <Link
-                href={"#"}
+                href={`insights/${item.slug.current}`}
                 className="text-start text-[#2E6C92] text-base font-normal w-full first-letter:uppercase"
               >
                 {t("read_more")}
@@ -84,6 +58,15 @@ export default function Insights() {
             </div>
           ))}
         </div>
+        <Stack
+          className="sm:max-w-[1187] max-w-screen-sm"
+          direction="row"
+          justifyContent="end"
+          alignItems="center"
+          sx={{ width: "100%" }}
+        >
+          <Pagination page={page} count={totalPages} color="primary" onChange={handleChangePage}/>
+        </Stack>
         <BaseContactSection />
       </div>
     </TheBody>

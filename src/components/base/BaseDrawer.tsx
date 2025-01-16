@@ -28,7 +28,7 @@ const BaseDrawer: React.FC<IProps> = ({ open, onToggle }) => {
     },
     {
       label: t("menu-4"),
-      href: DEFINE_ROUTERS.insights,
+      href: `${DEFINE_ROUTERS.insights}?page=1`,
     },
     {
       label: t("menu-5"),
