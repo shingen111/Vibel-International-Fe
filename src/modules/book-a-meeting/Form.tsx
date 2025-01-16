@@ -1,49 +1,73 @@
 "use client";
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "react-toastify";
+import { sendEmailService } from "@/services";
+import Visibility from "@/components/base/Visibility";
+import { CircularProgress } from "@mui/material";
+
+const schema = z.object({
+  name: z.string().min(1, "Name is required"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().min(1, "Phone number is required"),
+  message: z.string().min(1, "Message is required"),
+  isChecked: z.boolean().refine((val) => val === true, {
+    message: "Please confirm policy",
+  }),
+});
+
+type FormData = z.infer<typeof schema>;
 
 function InputForm({
-  value,
-  onChange,
+  control,
+  name,
   placeholder,
 }: {
-  value: string;
-  onChange: (value: string) => void;
+  control: any;
+  name: string;
   placeholder?: string;
 }) {
   return (
     <div className="w-full rounded-md bg-transparent border border-white py-[18px] px-[21px]">
-      <input
-        className="outline-none h-full w-full text-base bg-transparent text-white placeholder:text-white"
-        value={value}
-        placeholder={placeholder}
-        onChange={(e) => {
-          onChange(e.target.value);
-        }}
+      <Controller
+        control={control}
+        name={name}
+        render={({ field }) => (
+          <input
+            {...field}
+            className="outline-none h-full w-full sm:text-lg text-base bg-transparent text-white placeholder:text-white py-2"
+            placeholder={placeholder}
+          />
+        )}
       />
     </div>
   );
 }
 
 function TextAreaForm({
-  value,
-  onChange,
+  control,
+  name,
   placeholder,
 }: {
-  value: string;
-  onChange: (value: string) => void;
+  control: any;
+  name: string;
   placeholder?: string;
 }) {
   return (
     <div className="w-full rounded-md bg-transparent border border-white py-[18px] px-[21px]">
-      <textarea
-        className="outline-none h-full w-full text-base bg-transparent text-white placeholder:text-white min-h-[128px]"
-        value={value}
-        placeholder={placeholder}
-        onChange={(e) => {
-          onChange(e.target.value);
-        }}
+      <Controller
+        control={control}
+        name={name}
+        render={({ field }) => (
+          <textarea
+            {...field}
+            className="outline-none h-full w-full sm:text-lg text-base bg-transparent text-white placeholder:text-white min-h-[128px]"
+            placeholder={placeholder}
+          />
+        )}
       />
     </div>
   );
@@ -51,57 +75,74 @@ function TextAreaForm({
 
 export default function Form() {
   const t = useTranslations("book_a_meeting");
-  const [form, setForm] = React.useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+  const [loading, setLoading] = useState<boolean>(false);
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      isChecked: false,
+    },
   });
-  const [isChecked, setIsChecked] = React.useState(false);
 
-  const handleClick = () => {
-    if (!isChecked) {
-      toast.error("Please confirm policy");
+  const onSubmit = async (data: FormData) => {
+    try {
+      setLoading(true);
+      const response = await sendEmailService.sendEmail({
+        email: data.email,
+        name: data.name,
+        phone: data.phone,
+        message: data.message,
+      });
+
+      toast.success(response.message);
+    } catch (error: any) {
+      toast.error(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="bg-[#2E6C92] sm:min-h-[846px] sm:max-w-[576px] max-w-[476px] px-[56px] py-[65px] rounded-md flex flex-col justify-start items-start space-y-4">
-      <InputForm
-        value={form.name}
-        placeholder={t("name")}
-        onChange={(value) => {
-          setForm({ ...form, name: value });
-        }}
-      />
-      <InputForm
-        value={form.email}
-        placeholder={t("email")}
-        onChange={(value) => {
-          setForm({ ...form, email: value });
-        }}
-      />
-      <InputForm
-        value={form.phone}
-        placeholder={t("phone")}
-        onChange={(value) => {
-          setForm({ ...form, phone: value });
-        }}
-      />
+      <InputForm control={control} name="name" placeholder={t("name")} />
+      {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+
+      <InputForm control={control} name="email" placeholder={t("email")} />
+      {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+
+      <InputForm control={control} name="phone" placeholder={t("phone")} />
+      {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
+
       <TextAreaForm
-        value={form.message}
+        control={control}
+        name="message"
         placeholder={t("yours_message")}
-        onChange={(value) => {
-          setForm({ ...form, message: value });
-        }}
       />
+      {errors.message && (
+        <p className="text-red-500">{errors.message.message}</p>
+      )}
+
       <div className="flex justify-start items-start space-x-2">
         <div className="w-5">
-          <input
-            className="custom-checkbox"
-            type="checkbox"
-            checked={isChecked}
-            onChange={() => setIsChecked(!isChecked)}
+          <Controller
+            control={control}
+            name="isChecked"
+            render={({ field: { onChange, onBlur, value } }) => (
+              <input
+                type="checkbox"
+                checked={value}
+                onChange={(e) => onChange(e.target.checked)}
+                onBlur={onBlur}
+                className="custom-checkbox"
+              />
+            )}
           />
         </div>
         <p className="text-white sm:text-sm text-xs font-medium text-justify">
@@ -110,12 +151,27 @@ export default function Form() {
           })}
         </p>
       </div>
-      <button
-        className="sm:p-[18px] p-3 w-[120px] border border-white rounded-[100px] !mt-5 text-white hover:bg-white hover:bg-opacity-30"
-        onClick={handleClick}
+      {errors.isChecked && (
+        <p className="text-red-500">{errors.isChecked.message}</p>
+      )}
+
+      <Visibility
+        visibility={!loading}
+        suspenseComponent={
+          <CircularProgress
+            sx={{
+              color: "white",
+            }}
+          />
+        }
       >
-        {t("submit")}
-      </button>
+        <button
+          className="sm:p-[18px] p-3 w-[120px] border border-white rounded-[100px] !mt-5 text-white hover:bg-white hover:bg-opacity-30"
+          onClick={handleSubmit(onSubmit)}
+        >
+          {t("submit")}
+        </button>
+      </Visibility>
     </div>
   );
 }
