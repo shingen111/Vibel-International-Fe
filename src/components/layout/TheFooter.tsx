@@ -48,7 +48,6 @@ export default function TheFooter() {
         <Link
           href={DEFINE_ROUTERS.developConsulting}
           key={3}
-          target="_blank"
           className="text-[#8E8E8E] text-sm font-normal"
         >
           {t("Development Consulting and Project Supervision")}
@@ -75,7 +74,7 @@ export default function TheFooter() {
     {
       title: t("See Us On"),
       icon: (
-        <Link href="https://www.facebook.com/vibelinternationaljsc">
+        <Link href="https://www.facebook.com/vibelinternationaljsc" target="_blank">
           <Image
             height={20}
             width={20}

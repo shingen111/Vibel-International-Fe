@@ -80,6 +80,7 @@ export default function Form() {
     control,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -102,6 +103,7 @@ export default function Form() {
       });
 
       toast.success(response.message);
+      reset();
     } catch (error: any) {
       toast.error(error.message);
     } finally {

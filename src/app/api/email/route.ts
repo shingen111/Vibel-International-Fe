@@ -19,15 +19,30 @@ export async function POST(req: Request) {
   });
 
   if (!email) {
-    return Response.json({ message: "Missing email address.", data: null });
+    return Response.json(
+      { message: "Missing email address.", data: null },
+      {
+        status: 400,
+      }
+    );
   }
 
   if (!name) {
-    return Response.json({ message: "Missing name.", data: null });
+    return Response.json(
+      { message: "Missing name.", data: null },
+      {
+        status: 400,
+      }
+    );
   }
 
   if (!phone) {
-    return Response.json({ message: "Missing phone.", data: null });
+    return Response.json(
+      { message: "Missing phone.", data: null },
+      {
+        status: 400,
+      }
+    );
   }
 
   try {
@@ -37,9 +52,17 @@ export async function POST(req: Request) {
       html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
     });
 
-    return Response.json({ message: "Email sent successfully!", data: info });
+    return Response.json({
+      message: "Information sent successfully!",
+      data: info,
+    });
   } catch (error) {
     console.error("Error sending email:", error);
-    return Response.json({ message: "Error sending email.", data: null });
+    return Response.json(
+      { message: "Error sending email.", data: null },
+      {
+        status: 500,
+      }
+    );
   }
 }

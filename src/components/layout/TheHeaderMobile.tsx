@@ -4,28 +4,28 @@ import { Link } from "@/i18n/routing";
 import { AppBar, IconButton } from "@mui/material";
 import Image from "next/image";
 import BaseDrawer from "../base/BaseDrawer";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [showHeader, setShowHeader] = useState<boolean>(true);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (window.scrollY > lastScrollY) {
       setShowHeader(false);
     } else {
       setShowHeader(true);
     }
     setLastScrollY(window.scrollY);
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [handleScroll, lastScrollY]);
 
   return (
     <div className="flex flex-col w-full justify-center items-center bg-transparent absolute top-0 left-0 right-0 z-50 sm:hidden">
