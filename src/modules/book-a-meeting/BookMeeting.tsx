@@ -12,7 +12,7 @@ export default function BookMeeting() {
       description={t("description")}
     >
       <div
-        className="flex flex-col justify-start items-center w-full p-[29px] bg-no-repeat object-cover min-h-[1088px] relative"
+        className="flex flex-col justify-start items-center w-full p-[29px] bg-no-repeat object-cover bg-cover min-h-[1088px] relative"
         style={{
           backgroundImage: "url('/booking/booking-bg.png')",
         }}

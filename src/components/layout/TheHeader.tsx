@@ -37,12 +37,12 @@ function DesktopHeader() {
         <span className="text-sm text-white"> {t("title")}</span>
       </div>
       <div className="border-t border-b w-full flex justify-center items-center h-[100px]">
-        <div className="container flex justify-between items-center w-full space-x-[54px] ">
-          <Link href={"/"} className=" w-[107px]">
+        <div className="container flex justify-between items-center w-full space-x-[50px] ">
+          <Link href={"/"} className="w-[164px]">
             <Image
               className="hover-grow"
               height={97}
-              width={107}
+              width={164}
               src="/logo.svg"
               alt={"Logo"}
             />

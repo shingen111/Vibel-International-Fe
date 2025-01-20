@@ -4,13 +4,14 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
-function ItemSection({ url }: { url: string }) {
+function ItemSection({ url, width, height }: { url: string, width?: number, height?: number }) {
   return (
-    <div className="flex flex-col justify-center items-center w-[185px] h-[170px] border border-[#9B9B9B21] border-solid">
+    <div className="flex flex-col justify-center items-center sm:w-[185px] sm:h-[170px] w-[126px] h-[116px] border border-[#9B9B9B21] border-solid p-2">
       <div
         className="flex justify-center items-center"
         style={{
-          width: 160,
+          width: width,
+          height: height
         }}
       >
         <Image
@@ -69,6 +70,26 @@ const DEFINE_LIST_BRAND = [
   "/explore-hotel-brands/41.svg",
   "/explore-hotel-brands/42.svg",
   "/explore-hotel-brands/43.svg",
+  "/explore-hotel-brands/44.svg",
+  "/explore-hotel-brands/45.svg",
+  "/explore-hotel-brands/46.svg",
+  "/explore-hotel-brands/47.svg",
+  "/explore-hotel-brands/48.svg",
+  "/explore-hotel-brands/49.svg",
+  "/explore-hotel-brands/50.svg",
+  "/explore-hotel-brands/51.svg",
+  "/explore-hotel-brands/52.svg",
+  "/explore-hotel-brands/53.svg",
+  "/explore-hotel-brands/54.svg",
+  "/explore-hotel-brands/55.svg",
+  "/explore-hotel-brands/56.svg",
+  "/explore-hotel-brands/57.svg",
+  "/explore-hotel-brands/58.svg",
+  "/explore-hotel-brands/59.svg",
+  "/explore-hotel-brands/60.svg",
+  "/explore-hotel-brands/61.svg",
+  "/explore-hotel-brands/62.svg",
+  "/explore-hotel-brands/63.svg",
 ];
 
 export default function ExploreHotelBrands() {
@@ -80,7 +101,7 @@ export default function ExploreHotelBrands() {
       description={t("description")}
     >
       <div className="flex flex-col justify-start items-center w-full space-y-[78px]">
-        <div className="sm:max-w-[1024] grid sm:grid-cols-5 grid-cols-1 gap-[33px]">
+        <div className="sm:max-w-[1024] grid sm:grid-cols-5 grid-cols-2 gap-[18px]">
           {DEFINE_LIST_BRAND.map((item, index) => (
             <ItemSection key={index} url={item} />
           ))}

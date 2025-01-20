@@ -35,7 +35,7 @@ export default function SwitchLanguage() {
         }`}
         onClick={() => onChangeLocale("vi")}
       >
-        VietNam
+        Vietnam
       </div>
       <span className="text-white">|</span>
       <div

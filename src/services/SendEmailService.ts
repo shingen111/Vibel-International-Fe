@@ -1,4 +1,4 @@
-import axiosRequest from "@/plugins/request";
+import axios from "axios";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 class SendEmailService {
@@ -19,7 +19,7 @@ class SendEmailService {
     data: SMTPTransport.SentMessageInfo | undefined;
   }> {
     try {
-      const rs = await axiosRequest.post(this.url, {
+      const rs = await axios.post(this.url, {
         name,
         email,
         phone,

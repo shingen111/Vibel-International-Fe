@@ -15,7 +15,7 @@ const LIMIT_PAGE = 12;
 export default async function page({ params, searchParams }: IProps) {
   const { locale } = await params;
   const { page } = await searchParams;
-  const pageUpcase = Number(page);
+  const pageUpcase = Number(page ?? 1);
   setRequestLocale(locale);
 
   const data = await sanityFetch<SanityDocument[]>({
