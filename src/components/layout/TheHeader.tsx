@@ -31,14 +31,15 @@ function DesktopHeader() {
       href: DEFINE_ROUTERS.aboutUs,
     },
   ];
+
   return (
     <div className="flex-col w-full justify-center items-center mt-[13px] bg-transparent absolute top-0 left-0 right-0 z-50 sm:flex hidden">
       <div className="flex justify-center items-center w-full mb-[14px]">
-        <span className="text-sm text-white"> {t("title")}</span>
+        <span className="text-sm text-white">{t("title")}</span>
       </div>
       <div className="border-t border-b w-full flex justify-center items-center h-[100px]">
-        <div className="container flex justify-between items-center w-full space-x-[50px] ">
-          <Link href={"/"} className="w-[164px]">
+        <div className="container flex justify-between items-center w-full space-x-[30px] ">
+          <Link href={"/"}>
             <Image
               className="hover-grow"
               height={97}
@@ -47,10 +48,10 @@ function DesktopHeader() {
               alt={"Logo"}
             />
           </Link>
-          <div className="flex justify-between items-center w-full">
+          <div className="flex items-center w-full flex-wrap justify-center space-x-[20px]">
             {DEFINE_MENUS.map((item, index) => (
               <Link key={index} href={item.href}>
-                <span className="cursor-pointer text-white text-sm font-normal whitespace-nowrap hover-grow">
+                <span className="cursor-pointer text-white sm:text-sm font-normal whitespace-nowrap hover-grow">
                   {item.label}
                 </span>
               </Link>
@@ -66,7 +67,6 @@ function DesktopHeader() {
     </div>
   );
 }
-
 
 export default function TheHeader() {
   return (
