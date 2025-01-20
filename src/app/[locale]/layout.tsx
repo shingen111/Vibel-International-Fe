@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Omit<IProps, "children">) {
     title: "Vibel International",
     description: `Vibel international - ${t("home.title")}`,
     icons: {
-      icon: "/favicon/favicon.jpg",
-      shortcut: "/favicon/favicon.jpg",
-      apple: "/favicon/favicon.jpg",
+      icon: "/favicon/favicon.svg",
+      shortcut: "/favicon/favicon.svg",
+      apple: "/favicon/favicon.svg",
     },
   };
 }
