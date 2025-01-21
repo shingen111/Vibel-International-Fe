@@ -12,7 +12,9 @@ export default function BaseContactSection() {
         backgroundImage: 'url("/background/contact_bg.png")',
       }}
     >
-      <div className="absolute sm:left-[40%] right-0 top-[-14px] py-[67px] px-6 bg-[#2E6C92] flex flex-col justify-between items-start space-y-[44px] sm:w-[384px] w-[256px] min-h-[408px]">
+      <div
+        className="contact absolute right-0 top-[-14px] py-[67px] px-6 bg-[#2E6C92] flex flex-col justify-between items-start space-y-[44px] sm:w-[384px] w-[256px] min-h-[408px]"
+      >
         <h3 className="text-sm font-[300] text-white">{t("title")}</h3>
         <p className="text-base text-white font-normal">{t("description")}</p>
         <BaseButtonWhite title={t("btn")} href={DEFINE_ROUTERS.bookMeeting} />

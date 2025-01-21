@@ -12,7 +12,6 @@ export default async function ListHotel() {
   const posts = await sanityFetch<SanityDocument[]>({
     query: postsQuery(1, 2),
   });
-  console.log("🚀 ~ ListHotel ~ posts:", posts);
 
   return (
     <Visibility visibility={posts.length}>

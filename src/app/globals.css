@@ -33,6 +33,12 @@ body {
   padding: 0 !important;
 }
 
+@media (min-width: 560px) {
+  .contact {
+      left: calc(50% - 192px)
+  }
+}
+
 .hover-grow {
   display: inline-block;
   border-radius: 5px;
