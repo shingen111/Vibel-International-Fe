@@ -12,6 +12,7 @@ export default async function ListHotel() {
   const posts = await sanityFetch<SanityDocument[]>({
     query: postsQuery(1, 2),
   });
+  console.log("🚀 ~ ListHotel ~ posts:", posts);
 
   return (
     <Visibility visibility={posts.length}>
@@ -26,9 +27,12 @@ export default async function ListHotel() {
               className="object-cover w-full h-full"
             />
             <div className="absolute sm:right-0 left-0 sm:left-auto top-[-96px] sm:py-[44px] py-[24px] px-6 bg-[#2E6C92] flex flex-col justify-start items-start sm:min-h-[490px] space-y-[16px] max-w-[256px] sm:max-w-[384px]">
-              <h3 className="tsm:text-sm text-xs font-[300] text-white">
-                {posts[0]?.categories[0].name}
-              </h3>
+              {posts[0]?.categories !== null && (
+                <h3 className="tsm:text-sm text-xs font-[300] text-white">
+                  {posts[0]?.categories[0]?.name}
+                </h3>
+              )}
+
               <p className="sm:text-4xl text-xl text-white font-normal">
                 {posts[0]?.title}
               </p>
@@ -52,9 +56,11 @@ export default async function ListHotel() {
             }}
           >
             <div className="max-w-[256px] py-[24px] sm:py-[44px] px-6 flex flex-col justify-start items-start bg-white h-full sm:max-w-[384px] sm:float-start float-end">
-              <h3 className="sm:text-sm text-xs text-[#2E6C92] font-extralight">
-                {posts[1]?.categories && posts[1]?.categories[0].name}
-              </h3>
+              {posts[1]?.categories && (
+                <h3 className="tsm:text-sm text-xs font-[300] text-white">
+                  {posts[1]?.categories[1]?.name}
+                </h3>
+              )}
               <p className="uppercase sm:text-4xl text-xl font-normal text-black sm:mt-[37px] mt-[12px]">
                 {posts[1]?.title}
               </p>

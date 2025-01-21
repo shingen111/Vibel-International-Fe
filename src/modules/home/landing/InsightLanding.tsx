@@ -15,7 +15,7 @@ export default async function InsightLanding() {
     <Visibility visibility={posts.length}>
       <div className="flex flex-col justify-start items-center space-y-6 w-full bg-white !mt-24 sm:m-auto">
         <h3 className="text-4xl text-black font-normal uppercase">insights</h3>
-        <div className="flex sm:flex-row flex-col justify-start items-center sm:space-x-[100px] space-x-0 sm:space-y-0 space-y-5">
+        <div className="flex sm:flex-row flex-col justify-start items-start sm:space-x-[100px] space-x-0 sm:space-y-0 space-y-5">
           {posts.map((item, index) => (
             <div className="flex flex-col justify-start items-center w-[329px] min-h-[364px]" key={index}>
               <div className="w-full h-[184px]">

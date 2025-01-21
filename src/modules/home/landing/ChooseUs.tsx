@@ -49,9 +49,9 @@ export default function ChooseUs() {
               <ImageHover src={item.img} />
             </div>
             <div className="flex flex-col items-center justify-center sm:w-[50%] w-full">
-              <div className="text-start">
+              <div className="text-start space-y-2">
                 <h4 className="sm:text-4xl text-3xl text-[#222222]">{item.title}</h4>
-                <p className="text-sm text-[#707070]">{item.description}</p>
+                <p className="text-sm text-[#707070] font-bold">{item.description}</p>
               </div>
             </div>
           </div>

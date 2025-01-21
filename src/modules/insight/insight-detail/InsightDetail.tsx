@@ -32,7 +32,7 @@ export default function InsightDetail({ data }: IProps) {
               Insights
             </Typography>
           </Link>
-          <Typography>{data.title}</Typography>
+          <Typography>{data?.title}</Typography>
         </Breadcrumbs>
       </div>
     </div>
@@ -46,7 +46,7 @@ export default function InsightDetail({ data }: IProps) {
     >
       <div className="flex flex-col justify-start items-center w-full">
         {breadcrumbs}
-        <div className="sm:container flex flex-col justify-start items-center max-w-screen-sm space-y-5">
+        <div className="sm:container flex flex-col justify-start items-center max-w-screen-sm space-y-5 mb-10">
           {data?.mainImage ? (
             <Image
               src={builder
@@ -66,17 +66,17 @@ export default function InsightDetail({ data }: IProps) {
             <span>{formatDate(data?._createdAt ?? "")}</span>
           </div>
           <h1 className="sm:text-4xl w-full text-start font-bold">
-            {data.title}
+            {data?.title}
           </h1>
           <Typography
             component="span"
             className="sm:text-4xl w-full text-start font-bold text-[#808284]"
           >
-            {data.description}
+            {data?.description}
           </Typography>
           <Visibility visibility={data?.body}>
             <div className="h-full w-full flex flex-col justify-start items-start">
-              <PortableText value={data.body} />
+              <PortableText value={data?.body} />
             </div>
           </Visibility>
         </div>
