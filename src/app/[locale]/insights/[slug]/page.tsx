@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Omit<IProps, "children">) {
   };
 }
 export default async function page({ params }: IProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const data = await sanityFetch<SanityDocument>({
     query: postQuery,
     params: {
       slug,
     },
   });
-  return <InsightDetail data={data} />;
+  return <InsightDetail data={data} slug={slug} locale={locale} />;
 }

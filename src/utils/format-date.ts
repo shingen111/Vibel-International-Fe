@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
-export function formatDate(dateString: string | Date): string {
-  if(!dateString) return ''
+export function formatDate(dateString: string | Date, format?: string): string {
+  if (!dateString) return "";
   // Chuyển đổi đối tượng ngày thành dayjs
   const dayjsDate = dayjs(dateString);
 
@@ -11,5 +11,5 @@ export function formatDate(dateString: string | Date): string {
   }
 
   // Định dạng ngày theo dạng DD/MM/YYYY
-  return dayjsDate.format('DD/MM/YYYY');
+  return dayjsDate.format(format ?? "DD/MM/YYYY");
 }

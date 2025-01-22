@@ -1,3 +1,4 @@
+import TheLayout from "@/components/layout/TheLayout";
 import Insights from "@/modules/insight/Insights";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { postsQuery, totalPostsQuery } from "@/sanity/lib/queries";
@@ -24,5 +25,14 @@ export default async function page({ params, searchParams }: IProps) {
   const total = await sanityFetch<number>({
     query: totalPostsQuery,
   });
-  return <Insights data={data} page={pageUpcase} total={total} limit={LIMIT_PAGE} />;
+  return (
+    <TheLayout>
+      <Insights
+        data={data}
+        page={pageUpcase}
+        total={total}
+        limit={LIMIT_PAGE}
+      />
+    </TheLayout>
+  );
 }

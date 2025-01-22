@@ -8,14 +8,15 @@ import { toast } from "react-toastify";
 import { sendEmailService } from "@/services";
 import Visibility from "@/components/base/Visibility";
 import { CircularProgress } from "@mui/material";
+import Image from "next/image";
 
 const schema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().min(1, "Phone number is required"),
-  message: z.string().min(1, "Message is required"),
+  name: z.string().min(1, "name_is_required"),
+  email: z.string().email("email_is_required"),
+  phone: z.string().min(1, "phone_is_required"),
+  message: z.string().min(1, "message_is_required"),
   isChecked: z.boolean().refine((val) => val === true, {
-    message: "Please confirm policy",
+    message: "please_confirm_policy",
   }),
 });
 
@@ -76,11 +77,12 @@ function TextAreaForm({
 export default function Form() {
   const t = useTranslations("book_a_meeting");
   const [loading, setLoading] = useState<boolean>(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const {
     control,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
   } = useForm({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -95,15 +97,14 @@ export default function Form() {
   const onSubmit = async (data: FormData) => {
     try {
       setLoading(true);
-      const response = await sendEmailService.sendEmail({
+      await sendEmailService.sendEmail({
         email: data.email,
         name: data.name,
         phone: data.phone,
         message: data.message,
       });
-
-      toast.success(response.message);
       reset();
+      setIsSubmitted(true);
     } catch (error: any) {
       toast.error(error.message);
     } finally {
@@ -114,13 +115,25 @@ export default function Form() {
   return (
     <div className="bg-[#2E6C92] sm:min-h-[846px] sm:max-w-[576px] max-w-[476px] px-[56px] py-[65px] rounded-md flex flex-col justify-start items-start space-y-4">
       <InputForm control={control} name="name" placeholder={t("name")} />
-      {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+      {errors.name && (
+        <p className="text-red-500 first-letter:capitalize">
+          {t(errors.name.message)}
+        </p>
+      )}
 
       <InputForm control={control} name="email" placeholder={t("email")} />
-      {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+      {errors.email && (
+        <p className="text-red-500 first-letter:capitalize">
+          {t(errors.email.message)}
+        </p>
+      )}
 
       <InputForm control={control} name="phone" placeholder={t("phone")} />
-      {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
+      {errors.phone && (
+        <p className="text-red-500 first-letter:capitalize">
+          {t(errors.phone.message)}
+        </p>
+      )}
 
       <TextAreaForm
         control={control}
@@ -128,7 +141,9 @@ export default function Form() {
         placeholder={t("yours_message")}
       />
       {errors.message && (
-        <p className="text-red-500">{errors.message.message}</p>
+        <p className="text-red-500 first-letter:capitalize">
+          {t(errors.message.message)}
+        </p>
       )}
 
       <div className="flex justify-start items-start space-x-2">
@@ -154,17 +169,28 @@ export default function Form() {
         </p>
       </div>
       {errors.isChecked && (
-        <p className="text-red-500">{errors.isChecked.message}</p>
+        <p className="text-red-500 first-letter:capitalize">
+          {t(errors.isChecked.message)}
+        </p>
       )}
 
       <Visibility
-        visibility={!loading}
+        visibility={!loading && !isSubmitted}
         suspenseComponent={
-          <CircularProgress
-            sx={{
-              color: "white",
-            }}
-          />
+          isSubmitted ? (
+            <Image
+              height={70}
+              width={70}
+              src="/icons/checked.svg"
+              alt="checked"
+            />
+          ) : (
+            <CircularProgress
+              sx={{
+                color: "white",
+              }}
+            />
+          )
         }
       >
         <button

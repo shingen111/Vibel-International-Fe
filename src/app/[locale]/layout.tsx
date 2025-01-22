@@ -6,12 +6,11 @@ import {
 } from "next-intl/server";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "@/app/globals.css";
-import TheLayout from "@/components/layout/TheLayout";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 interface IProps {
   children: React.ReactNode;
@@ -58,7 +57,8 @@ export default async function DashboardLayout({ children, params }: IProps) {
           <AppRouterCacheProvider>
             <ToastContainer />
             <SpeedInsights />
-            <TheLayout>{children}</TheLayout>
+            {/* <TheLayout>{children}</TheLayout> */}
+            {children}
           </AppRouterCacheProvider>
         </NextIntlClientProvider>
       </body>

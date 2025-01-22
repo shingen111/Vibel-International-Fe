@@ -1,4 +1,8 @@
 {
+  "general": {
+    "by": "by",
+    "share": "share"
+  },
   "read_more": "read more",
   "homePage": {
     "title": "Home Page",
@@ -156,6 +160,11 @@
     "select_a_topic": "Select a Topic",
     "yours_message": "Your Message *",
     "policy": "By providing Vibel International your contact information, you acknowledge and agree to our <code>Privacy Policy</code> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.",
-    "submit": "Submit"
+    "submit": "Submit",
+    "name_is_required": "name is required",
+    "email_is_required": "email is required",
+    "phone_is_required": "phone is required",
+    "message_is_required": "message is required",
+    "please_confirm_policy": "please confirm policy"
   }
 }

@@ -1,4 +1,8 @@
 {
+  "general": {
+    "by": "bởi",
+    "share": "chia sẻ"
+  },
   "read_more": "đọc thêm",
   "homePage": {
     "title": "Trang chủ",
@@ -156,6 +160,11 @@
     "select_a_topic": "Select a Topic",
     "yours_message": "Lời nhắn của bạn *",
     "policy": "Bằng cách cung cấp thông tin liên lạc cho Vibel International, bạn xác nhận và đồng ý với <code>Chính sách Bảo mật</code> của chúng tôi và đồng ý nhận các thông tin tiếp thị, bao gồm qua các cuộc gọi tự động, tin nhắn và email, một số trong đó có thể sử dụng giọng nói nhân tạo hoặc được ghi sẵn. Sự đồng ý này không cần thiết cho việc mua bất kỳ sản phẩm hoặc dịch vụ nào, và bạn có thể chọn không tham gia bất cứ lúc nào. Để từ chối nhận tin nhắn, bạn có thể trả lời \"dừng\" bất cứ lúc nào. Để từ chối nhận email, bạn có thể nhấp vào liên kết hủy đăng ký trong các email. Có thể có phí cho tin nhắn và dữ liệu.",
-    "submit": "Gửi"
+    "submit": "Gửi",
+    "name_is_required": "Tên là bắt buộc",
+    "email_is_required": "Email là bắt buộc",
+    "phone_is_required": "Số điện thoại là bắt buộc",
+    "message_is_required": "Tin nhắn là bắt buộc",
+    "please_confirm_policy": "Vui lòng xác nhận chính sách"
   }
 }
