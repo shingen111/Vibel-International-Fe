@@ -11,6 +11,7 @@ import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface IProps {
   children: React.ReactNode;
@@ -56,6 +57,7 @@ export default async function DashboardLayout({ children, params }: IProps) {
         <NextIntlClientProvider messages={messages}>
           <AppRouterCacheProvider>
             <ToastContainer />
+            <SpeedInsights />
             <TheLayout>{children}</TheLayout>
           </AppRouterCacheProvider>
         </NextIntlClientProvider>

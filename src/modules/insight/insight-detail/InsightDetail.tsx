@@ -21,7 +21,6 @@ type IProps = {
 const builder = imageUrlBuilder(client);
 
 export default function InsightDetail({ data }: IProps) {
-  console.log("🚀 ~ InsightDetail ~ data:", data)
   const t = useTranslations();
 
   const breadcrumbs = (
