@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
 import { postQuery } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -51,10 +52,6 @@ export default async function Image({ params }: { params: { slug: string } }) {
     (
       <div
         style={{
-          backgroundImage: `url(${imageUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
           width: "100vw",
           height: "100vh",
           display: "flex",
@@ -66,16 +63,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
           position: "relative",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            padding: "20px",
-            width: "100%",
-            boxSizing: "border-box",
-          }}
-        >
-          {post.title}
-        </div>
+        <img className="h-full object-cover" src={imageUrl} alt={post.title}/>
       </div>
     ),
     {
