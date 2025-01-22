@@ -1,16 +1,23 @@
-import { ImageResponse } from 'next/og';
-import { client } from '@/sanity/lib/client';
-import { postQuery } from '@/sanity/lib/queries';
+import { ImageResponse } from "next/og";
+import { postQuery } from "@/sanity/lib/queries";
+import { sanityFetch } from "@/sanity/lib/fetch";
+import { SanityDocument } from "next-sanity";
 
-export const alt = 'Insight Detail Image';
+export const alt = "Insight Detail Image";
 export const size = {
   width: 1200,
   height: 630,
 };
-export const contentType = 'image/png';
+export const contentType = "image/png";
 
 export default async function Image({ params }: { params: { slug: string } }) {
-  const post = await client.fetch(postQuery, { slug: params.slug });
+  const { slug } = await params;
+  const post = await sanityFetch<SanityDocument>({
+    query: postQuery,
+    params: {
+      slug,
+    },
+  });
 
   if (!post || !post.mainImage) {
     return new ImageResponse(
@@ -18,13 +25,13 @@ export default async function Image({ params }: { params: { slug: string } }) {
         <div
           style={{
             fontSize: 48,
-            background: 'white',
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: 'black',
+            background: "white",
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "black",
           }}
         >
           Post Not Found
@@ -36,27 +43,37 @@ export default async function Image({ params }: { params: { slug: string } }) {
     );
   }
 
-  const imageUrl = post.imageURL;
+  const imageUrl = post.mainImage.asset._ref
+    ? `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/production/${post.mainImage.asset._ref.split("-")[1]}-690x460.jpg`
+    : post.imageURL;
 
   return new ImageResponse(
     (
       <div
         style={{
           backgroundImage: `url(${imageUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'flex-end',
-          padding: '20px',
-          color: 'white',
-          fontSize: 32,
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-end",
+          color: "white",
+          fontSize: 24,
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+          position: "relative",
         }}
       >
-        <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', padding: '10px' }}>
+        <div
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            padding: "20px",
+            width: "100%",
+            boxSizing: "border-box",
+          }}
+        >
           {post.title}
         </div>
       </div>
