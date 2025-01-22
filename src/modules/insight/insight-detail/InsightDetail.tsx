@@ -7,7 +7,7 @@ import React from "react";
 import imageUrlBuilder from "@sanity/image-url";
 import { formatDate } from "@/utils/format-date";
 import Visibility from "@/components/base/Visibility";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
@@ -34,17 +34,18 @@ export default function InsightDetail({ data, slug, locale }: IProps) {
     >
       <div className="flex flex-col justify-center items-center w-full">
         <div className="sm:maw-w-[713px] sm:px-0 px-5 flex flex-col justify-start items-start max-w-screen-sm mb-[90px]">
-          <Visibility visibility={data.mainImage.alt}>
-            <Typography
-              component="p"
-              my={1}
-              fontSize={12}
-              fontWeight={200}
-              color="#000000"
-            >
-              {data.mainImage.alt}
-            </Typography>
-          </Visibility>
+          <Box my={1}>
+            <Visibility visibility={data.mainImage.alt}>
+              <Typography
+                component="p"
+                fontSize={12}
+                fontWeight={200}
+                color="#000000"
+              >
+                {data.mainImage.alt}
+              </Typography>
+            </Visibility>
+          </Box>
           <div className="border-t-[1px] border-[#2E6C92] flex flex-row justify-start items-center space-x-1 pt-2">
             <Typography
               className="uppercase"
