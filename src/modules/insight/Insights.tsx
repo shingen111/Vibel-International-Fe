@@ -45,11 +45,15 @@ export default function Insights({ data, page, total, limit }: InsightProps) {
               key={index}
             >
               <div className="w-full h-[184px]">
-                <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
+                <Link href={`insights/${item.slug.current}`} className="w-full">
+                  <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
+                </Link>
               </div>
-              <span className="text-start text-[20px] font-[700] mt-[18px] w-full">
-                {item.title}
-              </span>
+              <Link href={`insights/${item.slug.current}`} className="w-full">
+                <span className="text-start text-[20px] font-[700] mt-[18px] w-full hover:text-[#2E6C92]">
+                  {item.title}
+                </span>
+              </Link>
               <p className="mt-[16px] text-base text-[#808284] font-normal text-start w-full">
                 {item.description}
               </p>
