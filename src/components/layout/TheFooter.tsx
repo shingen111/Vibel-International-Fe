@@ -78,7 +78,7 @@ export default function TheFooter() {
           <Image
             height={20}
             width={20}
-            src="/icons/facebook.svg"
+            src="/icons/facebook_2.svg"
             alt="facebook"
           />
         </Link>
