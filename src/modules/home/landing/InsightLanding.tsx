@@ -13,6 +13,9 @@ export default async function InsightLanding() {
   const posts = await sanityFetch<SanityDocument[]>({
     query: postsQuery(1, 3),
   });
+  const posts = await sanityFetch<SanityDocument[]>({
+    query: postsQuery(1, 3),
+  });
 
   return (
     <Visibility visibility={posts.length}>
@@ -25,7 +28,9 @@ export default async function InsightLanding() {
               key={index}
             >
               <div className="w-full h-[184px]">
-                <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
+                <Link href={`insights/${item.slug.current}`} className="w-full">
+                  <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
+                </Link>
               </div>
               <Visibility visibility={item.categories.length}>
                 <Stack

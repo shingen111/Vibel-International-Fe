@@ -74,11 +74,11 @@ export default function TheFooter() {
     {
       title: t("See Us On"),
       icon: (
-        <Link href="https://www.facebook.com/vibelinternationaljsc" target="_blank">
+        <Link className="h-[20px] w-[10px]" href="https://www.facebook.com/vibelinternationaljsc" target="_blank">
           <Image
             height={20}
             width={20}
-            src="/icons/facebook.svg"
+            src="/icons/facebook_2.svg"
             alt="facebook"
           />
         </Link>
