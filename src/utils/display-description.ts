@@ -1,4 +1,5 @@
 const displayDescription = (text: string, maxLength = 100) => {
+  if (!text) return "";
   const lines = text.split("\n");
   const newLines = lines.map((line) => {
     if (line.length > maxLength) {
