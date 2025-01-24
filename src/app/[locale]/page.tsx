@@ -19,7 +19,7 @@ export default async function page({ params }: IProps) {
   });
   return (
     <TheLayout>
-      <Home posts={posts} />;
+      <Home posts={posts} />
     </TheLayout>
   );
 }
