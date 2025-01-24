@@ -2,6 +2,7 @@ import Visibility from "@/components/base/Visibility";
 import { Link } from "@/i18n/routing";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { postsQuery } from "@/sanity/lib/queries";
+import displayDescription from "@/utils/display-description";
 import { useTranslations } from "next-intl";
 import { SanityDocument } from "next-sanity";
 import Image from "next/image";
@@ -26,17 +27,22 @@ export default async function ListHotel() {
               className="object-cover w-full h-full"
             />
             <div className="absolute sm:right-0 left-0 sm:left-auto top-[-96px] sm:py-[44px] py-[24px] px-6 bg-[#2E6C92] flex flex-col justify-start items-start sm:min-h-[490px] space-y-[16px] max-w-[256px] sm:max-w-[384px]">
-              {posts[0]?.categories !== null && (
-                <h3 className="tsm:text-sm text-xs font-[300] text-white">
-                  {posts[0]?.categories[0]?.name}
-                </h3>
-              )}
+              <Visibility visibility={posts[0]?.categories !== null}>
+                {posts[0]?.categories?.map((_item: any, index: number) => (
+                  <span
+                    key={index}
+                    className="text-white sm:text-sm text-xs font-[300]"
+                  >
+                    {_item.name}
+                  </span>
+                ))}
+              </Visibility>
 
               <p className="sm:text-4xl text-xl text-white font-normal">
                 {posts[0]?.title}
               </p>
               <p className="sm:text-sm text-xs text-white font-extralight">
-                {posts[0]?.description}
+                {displayDescription(posts[0]?.description)}
               </p>
               <Link
                 href={`insights/${posts[0]?.slug.current}`}
@@ -64,7 +70,7 @@ export default async function ListHotel() {
                 {posts[1]?.title}
               </p>
               <p className="sm:mt-[110px] mt-[20px] sm:text-sm text-xs font-extralight">
-                {posts[1]?.description}
+                {displayDescription(posts[1]?.description)}
               </p>
               <Link
                 href={`insights/${posts[1]?.slug.current}`}

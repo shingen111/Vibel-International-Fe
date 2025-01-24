@@ -20,7 +20,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
     },
   });
 
-  if (!post || !post.mainImage) {
+  if (!post || !post.imageURL) {
     return new ImageResponse(
       (
         <div
@@ -44,9 +44,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
     );
   }
 
-  const imageUrl = post.mainImage.asset._ref
-    ? `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/production/${post.mainImage.asset._ref.split("-")[1]}-690x460.jpg`
-    : post.imageURL;
+  const imageUrl = post.imageURL;
 
   return new ImageResponse(
     (
@@ -63,7 +61,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
           position: "relative",
         }}
       >
-        <img className="h-full object-cover" src={imageUrl} alt={post.title}/>
+        <img className="h-full object-cover" src={imageUrl} alt={post.title} />
       </div>
     ),
     {

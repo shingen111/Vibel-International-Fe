@@ -32,10 +32,7 @@ export default function ServiceLanding() {
       </h3>
       <div className="flex sm:flex-row flex-col justify-center items-center sm:space-x-[91px] w-full flex-wrap">
         {DEFINE_SERVICE.map((item, index) => (
-          <div
-            className="flex flex-col items-center w-[300px]"
-            key={index}
-          >
+          <div className="flex flex-col items-center max-w-[300px]" key={index}>
             <Link href={item.href} className="w-full">
               <ImageHover src={item.image} />
             </Link>

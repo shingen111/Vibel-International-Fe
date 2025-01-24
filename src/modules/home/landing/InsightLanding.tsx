@@ -3,6 +3,7 @@ import Visibility from "@/components/base/Visibility";
 import { Link } from "@/i18n/routing";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { postsQuery } from "@/sanity/lib/queries";
+import displayDescription from "@/utils/display-description";
 import { Stack } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { SanityDocument } from "next-sanity";
@@ -10,9 +11,6 @@ import React from "react";
 
 export default async function InsightLanding() {
   const t = useTranslations("");
-  const posts = await sanityFetch<SanityDocument[]>({
-    query: postsQuery(1, 3),
-  });
   const posts = await sanityFetch<SanityDocument[]>({
     query: postsQuery(1, 3),
   });
@@ -32,24 +30,35 @@ export default async function InsightLanding() {
                   <ImageHover src={item.imageURL} alt={item.mainImage.alt} />
                 </Link>
               </div>
-              <Visibility visibility={item.categories.length}>
+              <Visibility visibility={item.categories !== null}>
                 <Stack
                   direction="row"
                   justifyContent="start"
                   alignItems="center"
+                  sx={{ width: "100%" }}
+                  spacing={1}
+                  mt={1}
                 >
-                  {item.categories.map((category: string, subIndex: number) => (
-                    <span key={subIndex} className="mr-[4px]">
-                      {category}
+                  {item.categories?.map((_item: any, index: number) => (
+                    <span
+                      key={index}
+                      className="text-[#808284] text-xs font-normal"
+                    >
+                      {_item.name}
                     </span>
                   ))}
                 </Stack>
               </Visibility>
-              <span className="text-start text-[20px] font-[700] mt-[18px] w-full">
-                {item.title}
-              </span>
+              <Link
+                href={`insights/${item.slug.current}`}
+                className="w-full mt-[18px]"
+              >
+                <span className="text-start text-[20px] font-[700] w-full hover:text-[#2E6C92]">
+                  {item.title}
+                </span>
+              </Link>
               <p className="mt-[16px] text-base text-[#808284] font-normal text-start w-full">
-                {item.description}
+                {displayDescription(item.description)}
               </p>
               <Link
                 href={`insights/${item.slug.current}`}
