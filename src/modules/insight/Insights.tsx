@@ -91,7 +91,7 @@ export default function Insights({ data, page, total, limit }: InsightProps) {
         </div>
         <Visibility visibility={total}>
           <Stack
-            className="sm:max-w-[1187] max-w-screen-sm"
+            className="!mt-5"
             direction="row"
             justifyContent="end"
             alignItems="center"
