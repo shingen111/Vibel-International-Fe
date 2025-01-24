@@ -5,36 +5,73 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
+const RenderPositionText = ({ text }: { text: string }) => {
+  return (
+    <span className="sm:text-[16px] text-xs font-normal text-[#707070] text-center">
+      {text}
+    </span>
+  );
+};
+
 const DEFINE_EXPERT = [
   {
     name: "PHILLIP LEYSEN",
     avatar: "/about-us/expert_1.png",
-    position: "CHAIRMAN CO-FOUNDER",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-1 mt-2">
+        <RenderPositionText text="CHAIRMAN" />
+        <RenderPositionText text="CO-FOUNDER" />
+      </div>
+    ),
   },
   {
     name: "VŨ XUÂN KHANG",
     avatar: "/about-us/expert_2.png",
-    position: "PROJECT MANAGEMENT AND DEVELOPMENT CO-FOUNDER",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-2 mt-2">
+        <RenderPositionText text="PROJECT MANAGEMENT AND DEVELOPMENT" />
+        <RenderPositionText text="CO-FOUNDER" />
+      </div>
+    ),
   },
   {
     name: "LEOH MING PEI",
     avatar: "/about-us/expert_3.png",
-    position: "HONORARY ADVISOR ARCHITECT (1917 - 2019, Deceased)",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-2 mt-2">
+        <RenderPositionText text="HONORARY ADVISOR" />
+        <RenderPositionText text="ARCHITECT" />
+        <RenderPositionText text="(1917 - 2019, Deceased)" />
+      </div>
+    ),
   },
   {
     name: "ALEXANDER BUROG BUKIS",
     avatar: "/about-us/expert_4.png",
-    position: "PRE-OPENING DIRECTOR HOTEL MANAGEMENT",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-2 mt-2">
+        <RenderPositionText text="PRE-OPENING DIRECTOR" />
+        <RenderPositionText text="HOTEL MANAGEMENT" />
+      </div>
+    ),
   },
   {
     name: "PATRICK FERNANDEZ",
     avatar: "/about-us/expert_5.png",
-    position: "PROJECT DEVELOPMENT DIRECTOR",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-2 mt-2">
+        <RenderPositionText text="PROJECT DEVELOPMENT DIRECTOR" />
+      </div>
+    ),
   },
   {
     name: "NGUYỄN QUANG THẮNG",
     avatar: "/about-us/expert_6.png",
-    position: "DESIGN DIRECTOR",
+    position: (
+      <div className="flex flex-col justify-center items-center w-full space-y-2 mt-2">
+        <RenderPositionText text="DESIGN DIRECTOR" />
+      </div>
+    ),
   },
 ];
 
@@ -55,7 +92,7 @@ export default function AboutUsPage() {
         <h1 className="sm:text-[50px] text-[32px] font-normal text-center sm:max-w-[860px] max-w-screen-sm">
           {t("text_4")}
         </h1>
-        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] sm:py-[61px] sm:px-[76px] p-[24px] w-full">
+        <div className="flex flex-col justify-start items-start bg-[#F5F5F5] sm:py-[40px] sm:px-[76px] p-[24px] w-full !mt-[28px]">
           <ul className="list-disc list-inside ps-3">
             <BaseRenderText text={t("text_5")} component="li" />
             <BaseRenderText text={t("text_6")} component="li" />
@@ -88,9 +125,7 @@ export default function AboutUsPage() {
                   <span className="sm:text-[28px] text-lg font-medium text-black text-center">
                     {item.name}
                   </span>
-                  <span className="sm:text-[14px] text-xs font-normal text-[#707070] text-center">
-                    {item.position}
-                  </span>
+                  {item.position}
                 </div>
               </div>
             ))}

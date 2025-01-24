@@ -6,8 +6,13 @@ import ChooseUs from "./landing/ChooseUs";
 import BaseContactSection from "@/components/base/BaseContactSection";
 import ListHotel from "./landing/ListHotel";
 import InsightLanding from "./landing/InsightLanding";
+import { SanityDocument } from "next-sanity";
 
-export default function Home() {
+interface IProps {
+  posts: SanityDocument[];
+}
+
+export default function Home({ posts }: IProps) {
   const t = useTranslations("home");
   return (
     <TheBody url="/header-bg/header-bg-1.png" title={t("title")}>
@@ -15,8 +20,8 @@ export default function Home() {
         <ServiceLanding />
         <ChooseUs />
         <BaseContactSection />
-        <ListHotel />
-        <InsightLanding />
+        <ListHotel posts={posts.slice(0, 2)} />
+        <InsightLanding posts={posts.slice(2)} />
       </div>
     </TheBody>
   );

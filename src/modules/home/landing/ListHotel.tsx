@@ -1,18 +1,17 @@
 import Visibility from "@/components/base/Visibility";
 import { Link } from "@/i18n/routing";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { postsQuery } from "@/sanity/lib/queries";
 import displayDescription from "@/utils/display-description";
 import { useTranslations } from "next-intl";
 import { SanityDocument } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 
-export default async function ListHotel() {
+interface IProps {
+  posts: SanityDocument[];
+}
+
+export default function ListHotel({ posts }: IProps) {
   const t = useTranslations("list_hotel");
-  const posts = await sanityFetch<SanityDocument[]>({
-    query: postsQuery(1, 2),
-  });
 
   return (
     <Visibility visibility={posts.length}>

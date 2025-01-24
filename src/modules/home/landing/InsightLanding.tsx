@@ -1,19 +1,18 @@
 import ImageHover from "@/components/base/ImageHover";
 import Visibility from "@/components/base/Visibility";
 import { Link } from "@/i18n/routing";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { postsQuery } from "@/sanity/lib/queries";
 import displayDescription from "@/utils/display-description";
 import { Stack } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { SanityDocument } from "next-sanity";
 import React from "react";
 
-export default async function InsightLanding() {
+interface IProps {
+  posts: SanityDocument[];
+}
+
+export default function InsightLanding({ posts }: IProps) {
   const t = useTranslations("");
-  const posts = await sanityFetch<SanityDocument[]>({
-    query: postsQuery(1, 3),
-  });
 
   return (
     <Visibility visibility={posts.length}>
