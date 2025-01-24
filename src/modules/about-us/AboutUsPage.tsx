@@ -110,7 +110,7 @@ export default function AboutUsPage() {
             {DEFINE_EXPERT.map((item, index) => (
               <div
                 key={index}
-                className="sm:w-[376px] sm:h-[370px] min-h-[286px] pt-[32px] space-y-[28px] bg-white px-1"
+                className="sm:w-[376px] sm:h-[370px] min-h-[286px] pt-[32px] space-y-[24px] bg-white px-1"
               >
                 <div className="flex justify-center items-center">
                   <Image
@@ -122,6 +122,7 @@ export default function AboutUsPage() {
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center">
+                  <div className="w-[16px] h-[4px] mb-[14px] rounded-[4px] bg-[#F4F4F4]"></div>
                   <span className="sm:text-[28px] text-lg font-medium text-black text-center">
                     {item.name}
                   </span>
