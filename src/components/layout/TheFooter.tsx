@@ -58,8 +58,8 @@ export default function TheFooter() {
       title: t("Contact"),
       items: [
         <Tooltip title="Click to call" key={1}>
-          <Link href={"tel:070 3538 930"}>
-            <TextFormat text="070 3538 930" />
+          <Link href={"tel:036 7666 555"}>
+            <TextFormat text="036 7666 555" />
           </Link>
         </Tooltip>,
         <Tooltip title="Click to mail" key={2}>
