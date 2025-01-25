@@ -19,7 +19,6 @@ interface InsightProps {
 }
 
 export default function Insights({ data, page, total, limit }: InsightProps) {
-  console.log("🚀 ~ Insights ~ data:", data)
   const router = useRouter();
 
   const t = useTranslations();

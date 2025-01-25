@@ -11,6 +11,9 @@ interface IProps {
   searchParams: ISearchParams;
 }
 
+export const fetchCache = 'force-no-store';
+export const revalidate = 0;
+
 const LIMIT_PAGE = 12;
 
 export default async function page({ params, searchParams }: IProps) {
