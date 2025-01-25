@@ -17,7 +17,6 @@ export default async function page({ params }: IProps) {
   const posts = await sanityFetch<SanityDocument[]>({
     query: postsQuery(1, 5),
   });
-  console.log("🚀 ~ page ~ posts:", posts)
   return (
     <TheLayout>
       <Home posts={posts} />

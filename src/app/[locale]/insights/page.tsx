@@ -20,9 +20,8 @@ export default async function page({ params, searchParams }: IProps) {
   setRequestLocale(locale);
 
   const data = await sanityFetch<SanityDocument[]>({
-    query: postsQuery(1, LIMIT_PAGE),
+    query: postsQuery(pageUpcase, LIMIT_PAGE),
   });
-  console.log("🚀 ~ page ~ data:", data)
   const total = await sanityFetch<number>({
     query: totalPostsQuery,
   });
