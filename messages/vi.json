@@ -15,7 +15,8 @@
     "menu-3": "Khám Phá Các Thương Hiệu",
     "menu-4": "Insights",
     "menu-5": "Về Chúng Tôi",
-    "contact": "Đặt Lịch Tư Vấn"
+    "contact": "Đặt Lịch Tư Vấn",
+    "menu-6": "Đại Diện Của Tập Đoàn Wyndham Tại Việt Nam"
   },
   "home": {
     "title": "Hơn 35 Năm Kinh Nghiệm Quản Lý Khách Sạn"
@@ -166,5 +167,34 @@
     "phone_is_required": "Số điện thoại là bắt buộc",
     "message_is_required": "Tin nhắn là bắt buộc",
     "please_confirm_policy": "Vui lòng xác nhận chính sách"
+  },
+  "representative": {
+    "title": "ĐẠI DIỆN CỦA TẬP ĐOÀN WYNDHAM TẠI VIỆT NAM",
+    "text_1": "VAI TRÒ CỦA VIBEL INT VỚI WYNDHAM",
+    "text_2": "VIBEL INT (“VIBEL INTERNATIONAL”) được thành lập 2008 tại Việt Nam nhằm hợp tác và kết nối với WHG (“Wyndham Hotel Group”) tại Mỹ để trợ giúp và phát triển cho các CĐT (“Chủ đầu tư”) dự án khách sạn và khu nghỉ dưỡng tại Việt Nam.",
+    "text_3": "WHG đứng trong top 5 các tập đoàn khách sạn trên Thế giới. VIBEL INT cho đến năm 2024 đã kết nối và giao dịch thành công với hơn 40 dự án dưới các thương hiệu của WHG.",
+    "text_4": "“VIBEL INT” đã rất thành công trong việc giải thích và thuyết phục các “CĐT” để thấu hiểu và tận dụng các ưu điểm và thế mạnh trong việc hợp tác cùng phát triển với “WHG”, cụ thể:",
+    "text_5": "Việc nhận nhượng quyền thương hiệu các Chủ đầu tư sẽ được:",
+    "text_6": "Sở hữu hợp pháp một thương hiệu lớn, uy tín, nằm trong top 5 các Tập đoàn quản lý khách sạn và khu nghỉ dưỡng trên thế giới.",
+    "text_7": "Được tư vấn về kiến trúc và thiết kế cho dự án theo tiêu chuẩn Wyndham.",
+    "text_8": "Hệ thống nhân sự của khách sạn hoặc khu nghỉ dưỡng được đào tạo chuyên môn và chuyên nghiệp từ các chuyên gia của tập đoàn.",
+    "text_9": "Dự án của Chủ đầu tư sẽ được kích hoạt trong hệ thống kinh doanh và tiếp thị toàn cầu của Wyndham với hơn 1000 văn phòng ở các Quốc gia/vùng lãnh thổ khác nhau. Hình ảnh và tên khách sạn, khu nghỉ dưỡng được thương xuyên quảng bá trên hệ thống tạp chí và truyền thông của Wyndham.",
+    "text_10": "Khách sạn hoặc khu nghỉ dưỡng của Chủ đầu tư sẽ được thương xuyên được kiểm tra và đánh giá chất lượng bởi Wyndham nhằm đảm bảo duy trì chất lượng phục vụ tốt nhất phục vụ cho khách lưu trú.",
+    "text_11": "Khách sạn hoặc khu nghỉ dưỡng của Chủ đầu tư sẽ được được liên kết và kết nối với các đối tác của Tập đoàn nhằm gia tăng doanh thu (như các hãng hàng không, các hãng lữ hành, các hệ thống ngân hàng, các loại thẻ tín dụng….vv) với hơn 128 Quốc gia và vùng lãnh thổ.",
+    "text_12": "Khi WYNDHAM được Chủ đầu tư yêu cầu quản lý khách sạn. Wyndham sẽ:",
+    "text_13": "Gánh vác mọi lo âu của “CĐT” trong công việc kinh doanh và tiếp thị nhằm mang lại doanh thu cao nhất cho khách sạn hoặc khu nghỉ dưỡng.",
+    "text_14": "Bảo đảm duy trì tốt các dịch vụ trong Khách sạn/khu nghỉ dưỡng luôn đạt chuẩn Quốc tế..",
+    "text_15": "Nhân sự của khách sạn hoặc khu nghỉ dưỡng được đào tạo hàng ngày.",
+    "text_16": "Thiết lập và xây dựng các kế hoạch và hệ thống, mang lưới bán hàng.",
+    "text_17": "Duy trì việc bảo dưỡng và bảo trì cơ sở vất chất cho Khách sạn/khu nghỉ dưỡng theo đúng quy chuẩn của Wyndham.",
+    "text_18": "Wyndham có sự uyển chuyển và hoàn toàn khác biệt với các tập đoàn quản lý khách sạn khác, cụ thể:",
+    "text_19": "Thời hạn của hợp đồng là ngắn, tối thiểu 10 năm. Sẽ gia hạn thêm 10 năm tiếp theo mà Chủ đầu tư không phải nộp phí gia nhập nếu Chủ đầu tư muốn.",
+    "text_20": "Không quản lý trực tiếp khách sạn nếu Chủ đầu tư không có nhu cầu.",
+    "text_21": "Chỉ thu phí sau khi hợp đồng có hiệu lực.",
+    "text_22": "Hệ thống kinh doanh, tiếp thị và bán hàng rất rộng lớn khắp Thế giới với hơn 800 văn phòng/hệ thống/mạng lưới kinh doanh và quảng bá nằm trên 128 Quốc gia và vùng lãnh thổ.",
+    "text_23": "Khách sạn/Khu nghỉ dưỡng của “CĐT” sẽ có một lượng “khách hàng thương xuyên” của tập đoàn với hơn 80 triệu khách hàng có “thẻ thường xuyên” trên Toàn cầu.",
+    "text_24": "Các chi phí/mức phí uyển chuyển đáp ứng đủ các khả năng của phía “CĐT”.",
+    "text_25": "Khách sạn hoặc khu nghỉ dưỡng của Chủ đầu tư được thường xuyên xuất hiện trên hệ thống truyền thông và hệ thống bán hàng, tiếp thị của Wyndham",
+    "text_26": "Tất cả các khách hàng lưu trú tại khách sạn hoặc khu nghỉ dưỡng của Wyndham đều được mời và kết nạp thành khách hàng thường xuyên của Wyndham, được cộng điểm mỗi khi sử dụng dịch vụ tại các cơ sở có thương hiệu Wyndham."
   }
 }

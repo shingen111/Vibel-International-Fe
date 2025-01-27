@@ -15,7 +15,8 @@
     "menu-3": "Explore Hotel Brands",
     "menu-4": "Insights",
     "menu-5": "About Us",
-    "contact": "Book a Meeting"
+    "contact": "Book a Meeting",
+    "menu-6": "Representative of Wyndham Hotel Group in Vietnam"
   },
   "home": {
     "title": "OVER 35 YEARS OF HOSPITALITY MANAGEMENT"
@@ -166,5 +167,34 @@
     "phone_is_required": "phone is required",
     "message_is_required": "message is required",
     "please_confirm_policy": "please confirm policy"
+  },
+  "representative": {
+    "title": "Representative of Wyndham Hotel Group in Vietnam",
+    "text_1": "THE ROLE OF VIBEL INT WITH WYNDHAM",
+    "text_2": "VIBEL INT (“VIBEL INTERNATIONAL”) was established in 2008 in Vietnam to collaborate and connect with WHG (“Wyndham Hotel Group”) in the United States, supporting and developing hotel and resort projects for investors in Vietnam.",
+    "text_3": "WHG is ranked among the top 5 hotel groups in the world. As of 2024, VIBEL INT has successfully connected and facilitated transactions for over 40 projects under WHG’s brands.",
+    "text_4": "VIBEL INT has excelled in explaining and persuading investors to understand and leverage the advantages and strengths of partnering with WHG, specifically:",
+    "text_5": "Benefits for Investors in Franchise Partnerships:",
+    "text_6": "Investors gain legal ownership of a prestigious global brand ranked among the top 5 hotel and resort management groups in the world.",
+    "text_7": "Projects receive architectural and design consultancy services adhering to Wyndham’s standards.",
+    "text_8": "Hotel or resort staff are professionally trained by Wyndham’s experts.",
+    "text_9": "Investor projects are integrated into Wyndham's global business and marketing network with over 1,000 offices across different countries and territories. Hotel and resort images and names are regularly promoted through Wyndham’s magazines and media.",
+    "text_10": "Wyndham regularly inspects and evaluates the quality of hotels or resorts to ensure the best service standards for guests.",
+    "text_11": "Investor hotels and resorts are linked with Wyndham’s extensive partner network, including airlines, travel agencies, banking systems, credit card providers, and more, across over 128 countries and territories.",
+    "text_12": "When Wyndham is requested by investors to manage their hotels, the group:",
+    "text_13": "Wyndham assumes responsibility for business operations and marketing to maximize revenue for the hotel or resort.",
+    "text_14": "Wyndham guarantees that services at the hotel or resort consistently meet international standards.",
+    "text_15": "The group provides continuous training for hotel or resort staff.",
+    "text_16": "Wyndham establishes comprehensive sales systems and networks.",
+    "text_17": "Ensures proper maintenance of hotel or resort facilities in accordance with Wyndham’s standards.",
+    "text_18": "Wyndham’s Flexibility and Competitive Advantages:",
+    "text_19": "Minimum contract duration of 10 years, with an optional 10-year extension without requiring an additional joining fee if desired by the investor.",
+    "text_20": "Wyndham does not mandate direct management of hotels if the investor does not require it.",
+    "text_21": "Fees are only charged after the contract comes into effect.",
+    "text_22": "Wyndham boasts a vast global sales and marketing network with over 800 offices in 128 countries and territories.",
+    "text_23": "Hotels and resorts under Wyndham’s management benefit from a loyal customer base of over 80 million members of Wyndham’s global loyalty program.",
+    "text_24": "Fee structures are tailored to meet the financial capacities of investors.",
+    "text_25": "Investor hotels and resorts are consistently featured across Wyndham’s marketing and media platforms.",
+    "text_26": "All guests staying at Wyndham-branded properties are invited to join Wyndham’s loyalty program, earning points for future stays at Wyndham locations worldwide."
   }
 }

@@ -12,6 +12,7 @@ const DEFINE_ROUTERS = {
   insights: "/insights",
   aboutUs: "/about-us",
   bookMeeting: "/book-a-meeting",
+  representative: "/representative",
 };
 
 export { DEFINE_ROUTERS_ADMIN, DEFINE_ROUTERS };

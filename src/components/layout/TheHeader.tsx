@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import SwitchLanguage from "../base/SwitchLanguage";
-import BaseButtonWhite from "../base/BaseButtonWhite";
 import { DEFINE_ROUTERS } from "@/constants/routers";
 import MobileHeader from "./TheHeaderMobile";
 
@@ -30,6 +29,10 @@ function DesktopHeader() {
       label: t("menu-5"),
       href: DEFINE_ROUTERS.aboutUs,
     },
+    {
+      label: t("menu-6"),
+      href: DEFINE_ROUTERS.representative,
+    },
   ];
 
   return (
@@ -37,17 +40,17 @@ function DesktopHeader() {
       <div className="flex justify-center items-center w-full mb-[14px]">
         <span className="text-sm text-white">{t("title")}</span>
       </div>
-      <div className="border-t border-b w-full flex justify-center items-center h-[100px]">
-        <div className="container flex justify-between items-center w-full space-x-[30px] ">
-          <Link href={"/"}>
-            <Image
-              className="hover-grow"
-              height={97}
-              width={164}
-              src="/logo.svg"
-              alt={"Logo"}
-            />
-          </Link>
+      <div className="border-t border-b w-full flex justify-center items-center h-[100px] container">
+        <Link href={"/"}>
+          <Image
+            className="hover-grow"
+            height={100}
+            width={164}
+            src="/logo.svg"
+            alt={"Logo"}
+          />
+        </Link>
+        <div className="flex justify-between items-center w-full space-x-[30px]">
           <div className="flex items-center w-full flex-wrap justify-center space-x-[20px]">
             {DEFINE_MENUS.map((item, index) => (
               <Link key={index} href={item.href}>
@@ -57,10 +60,13 @@ function DesktopHeader() {
               </Link>
             ))}
           </div>
-          <BaseButtonWhite
-            title={t("contact")}
-            href={DEFINE_ROUTERS.bookMeeting}
-          />
+                    <Image
+                      className="h-[90px] w-auto"
+                      height={100}
+                      width={164}
+                      src="/icons/group-icon.svg"
+                      alt={"Logo"}
+                    />
           <SwitchLanguage />
         </div>
       </div>
