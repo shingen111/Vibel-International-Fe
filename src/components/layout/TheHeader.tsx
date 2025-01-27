@@ -40,7 +40,7 @@ function DesktopHeader() {
       <div className="flex justify-center items-center w-full mb-[14px]">
         <span className="text-sm text-white">{t("title")}</span>
       </div>
-      <div className="border-t border-b w-full flex justify-center items-center h-[100px] container">
+      <div className="border-t border-b w-full flex justify-center items-center h-[100px] px-[80px]">
         <Link href={"/"}>
           <Image
             className="hover-grow"
@@ -60,13 +60,13 @@ function DesktopHeader() {
               </Link>
             ))}
           </div>
-                    <Image
-                      className="h-[90px] w-auto"
-                      height={100}
-                      width={164}
-                      src="/icons/group-icon.svg"
-                      alt={"Logo"}
-                    />
+          <Image
+            className="h-[90px] w-auto"
+            height={100}
+            width={164}
+            src="/icons/group-icon.svg"
+            alt={"Logo"}
+          />
           <SwitchLanguage />
         </div>
       </div>

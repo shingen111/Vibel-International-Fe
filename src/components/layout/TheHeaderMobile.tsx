@@ -34,7 +34,7 @@ export default function MobileHeader() {
         style={{
           transition: "top 0.3s",
           top: `${showHeader ? 0 : 0}px`,
-          background: `${lastScrollY < 50 ? "transparent" : "black"}`,
+          background: `${lastScrollY < 50 ? "transparent" : "#2E6C92"}`,
         }}
       >
         <div className="border-b w-full flex justify-center items-center sm:h-[100px] h-auto">

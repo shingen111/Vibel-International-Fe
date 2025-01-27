@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media (max-width: 560px) {
+  .contact {
+      left: calc(50% - 128px)
+  }
+}
+
 .hover-grow {
   display: inline-block;
   border-radius: 5px;

@@ -45,7 +45,7 @@ const BaseDrawer: React.FC<IProps> = ({ open, onToggle }) => {
       role="presentation"
       onClick={() => onToggle(false)}
       onKeyDown={() => onToggle(false)}
-      className="flex flex-col justify-start items-center space-y-3 h-full w-[255px] bg-black"
+      className="flex flex-col justify-start items-center space-y-3 h-full w-[255px] bg-[#2E6C92]"
     >
       <Link
         href="/"

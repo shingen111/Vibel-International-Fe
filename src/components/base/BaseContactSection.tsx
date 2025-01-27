@@ -13,7 +13,7 @@ export default function BaseContactSection() {
       }}
     >
       <div
-        className="contact absolute right-0 top-[-14px] py-[67px] px-6 bg-[#2E6C92] flex flex-col justify-between items-start space-y-[44px] sm:w-[384px] w-[256px] min-h-[408px]"
+        className="contact absolute top-[-14px] py-[67px] px-6 bg-[#2E6C92] flex flex-col justify-between items-start space-y-[44px] sm:w-[384px] w-[256px] min-h-[408px]"
       >
         <h3 className="text-sm font-[300] text-white">{t("title")}</h3>
         <p className="text-base text-white font-normal">{t("description")}</p>

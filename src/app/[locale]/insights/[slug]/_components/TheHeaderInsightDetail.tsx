@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { DEFINE_ROUTERS } from "@/constants/routers";
 import TheMobileHeader from "./TheMobileHeader";
-import BaseButtonWhite from "@/components/base/BaseButtonWhite";
 import SwitchLanguage from "@/components/base/SwitchLanguage";
 
 function DesktopHeader() {
@@ -41,18 +40,18 @@ function DesktopHeader() {
       <div className="flex justify-center items-center w-full mb-[14px] mt-[19px]">
         <span className="text-sm text-white">{t("title")}</span>
       </div>
-      <div className="border-t w-full flex justify-center items-center h-[100px]">
-        <div className="container flex justify-between items-center w-full space-x-[30px] relative">
-          <Link href={"/"} className="absolute">
-            <Image
-              className="hover-grow h-[140px]"
-              height={100}
-              width={164}
-              src="/logo.svg"
-              alt={"Logo"}
-            />
-          </Link>
-          <div className="flex items-center w-full flex-wrap justify-center space-x-[20px] ms-[164px]">
+      <div className="border-t border-b w-full flex justify-center items-center h-[100px] px-[80px]">
+        <Link href={"/"}>
+          <Image
+            className="hover-grow"
+            height={100}
+            width={164}
+            src="/logo.svg"
+            alt={"Logo"}
+          />
+        </Link>
+        <div className="flex justify-between items-center w-full space-x-[30px]">
+          <div className="flex items-center w-full flex-wrap justify-center space-x-[20px]">
             {DEFINE_MENUS.map((item, index) => (
               <Link key={index} href={item.href}>
                 <span className="cursor-pointer text-white sm:text-sm font-normal whitespace-nowrap hover-grow">
@@ -61,9 +60,12 @@ function DesktopHeader() {
               </Link>
             ))}
           </div>
-          <BaseButtonWhite
-            title={t("contact")}
-            href={DEFINE_ROUTERS.bookMeeting}
+          <Image
+            className="h-[90px] w-auto"
+            height={100}
+            width={164}
+            src="/icons/group-icon.svg"
+            alt={"Logo"}
           />
           <SwitchLanguage />
         </div>
