@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "@mui/material";
 
 interface VideoComponentProps {
   src: string;
@@ -7,12 +6,12 @@ interface VideoComponentProps {
 
 const VideoComponent: React.FC<VideoComponentProps> = ({ src }) => {
   return (
-    <Box sx={{ width: "1022px", margin: "auto" }}>
+    <div className="sm:w-1022px w-full">
       <video controls style={{ width: "100%", height: "auto" }}>
         <source src={src} type="video/mp4" />
         Trình duyệt của bạn không hỗ trợ video.
       </video>
-    </Box>
+    </div>
   );
 };
 

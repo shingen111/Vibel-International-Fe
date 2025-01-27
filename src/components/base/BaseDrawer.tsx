@@ -35,6 +35,10 @@ const BaseDrawer: React.FC<IProps> = ({ open, onToggle }) => {
       label: t("menu-5"),
       href: DEFINE_ROUTERS.aboutUs,
     },
+    {
+      label: t("menu-6"),
+      href: DEFINE_ROUTERS.representative,
+    },
   ];
   const list = () => (
     <div
